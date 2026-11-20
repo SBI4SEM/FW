@@ -40,6 +40,29 @@ flowchart TD
     J --> M["Inconclusivo"]
 ```
 
+### 1.1 Recurso de aprendizagem
+
+O recurso de aprendizagem reúne a SBI, a biocomputação em nuvem, o SEM e a governança ética (Figura 1). Ele percorre os três tipos do SEM, com módulos técnicos associados a cada etapa (Figura 2).
+
+```mermaid
+flowchart LR
+    S["SBI<br/>redes neurais in vitro<br/>em circuito fechado"] --> R["Recurso de aprendizagem"]
+    N["Biocomputação em nuvem<br/>acesso remoto sem laboratório úmido"] --> R
+    E["SEM de Renzulli<br/>Tipos I, II e III"] --> R
+    G["Governança ética<br/>biossegurança, consentimento<br/>e neuroética experimental"] --> R
+```
+
+*Figura 1 – Convergência entre a SBI e o modelo SEM. A nuvem remove a barreira do laboratório físico; se a SBI será vetor de enriquecimento escolar é hipótese a testar, e não resultado.*
+
+```mermaid
+flowchart LR
+    T1["Tipo I: exploração geral<br/>webinars, visitas virtuais,<br/>introdução à biocomputação"] --> T2["Tipo II: treinamento técnico<br/>Python, spike sorting,<br/>simulações SynaptoGen"]
+    T2 --> T3["Tipo III: investigação em nuvem<br/>CL API, StimPlan,<br/>controle closed-loop"]
+    T3 --> P["Produto final<br/>artigo, exposição ou periódico<br/>com audiência real"]
+```
+
+*Figura 2 – Transposição pedagógica dos módulos da ABNIA aos três tipos do SEM. Mapeamento proposto por este estudo, com ênfase e não exclusividade; o módulo de substrato neural fica com o parceiro habilitado.*
+
 ## 2. Regra de decisão
 
 Fixada **antes da coleta**, na escala do **g de Hedges** da diferença ajustada pela ANCOVA. O limiar é o menor efeito de interesse prático (valor de partida g = 0,30, a confirmar). O d = 0,30 da Tabela 4 é só parâmetro de planejamento amostral. Com amostras de piloto, o desfecho mais provável é **inconclusivo**, e o relato deve dizê-lo. Há quatro categorias: H1 sustentada, **desfavorável à SBI** (simétrica de H1: IC abaixo de zero e g ≤ −limiar; um efeito negativo claro não é "inconclusivo"), H3 compatível e inconclusivo. Implementação: `analise.decidir`.
@@ -168,6 +191,23 @@ Se um estágio não for alcançado até o fim do mês 4, a mudança vira **emend
 
 - [`docs/braco_C_eeg.md`](docs/braco_C_eeg.md): conjuntos públicos de EEG e algoritmos suportados pelo MetaBCI, com divisão por sessão ou bloco e o mesmo decodificador linear dos demais braços.
 - [`docs/leitura_critica.md`](docs/leitura_critica.md): atividade de neuroética que rastreia afirmações de divulgação (eficiência energética, DishBrain, preços, robôs) até a fonte primária.
+
+### 4.5 Pontes entre química, biologia e matemática
+
+A tabela reúne os conteúdos que o documento curricular da SEDF (2008) traz em cada área. Quando a ligação entre duas áreas não está no documento, a célula diz isso. Exemplos sem correspondência no documento são apenas ilustrativos. Não é um levantamento de práticas docentes: os relatos de ensino citados foram localizados em busca exploratória e não foram sistematizados.
+
+| Aproximação | Química | Biologia | Matemática | No documento da SEDF (2008) |
+|---|---|---|---|---|
+| Proporção e concentração | concentração e diluição | concentração de soluções; osmose | razão, proporção, porcentagem | química: "cálculos relacionados à concentração e solubilização" |
+| Logaritmo e pH | pH e pOH | pH de fluidos biológicos | logaritmo como expoente de números muito grandes ou muito pequenos | cada lado aparece; a ligação entre eles é proposta deste estudo |
+| Potências de dez e ordens de grandeza | massa molar, número de Avogadro | tamanho de células e organelas | notação científica | química traz massa molar e Avogadro; notação científica não aparece nas seções das disciplinas |
+| Crescimento e decaimento exponencial | cinética química | "taxas de crescimento… representadas em tabelas e gráficos" | função exponencial | cada lado aparece; a ligação é proposta deste estudo |
+| Probabilidade e genética | — | leis de Mendel e "noções básicas de probabilidade para prever resultados de cruzamentos" | probabilidade | ligação feita no documento (biologia) |
+| Gráficos e curvas | solubilidade × temperatura | transferência de matéria e energia "graficamente" | gráficos e funções | leitura de gráficos nas três áreas |
+| Balanceamento e sistemas lineares | "balanceamento por tentativas" | — | sistemas lineares (regra de Cramer, escalonamento) | conteúdos separados; a ponte é proposta deste estudo |
+| Equilíbrio e homeostase | equilíbrio químico; princípio de Le Chatelier | homeostase | quociente de concentrações | homeostase não aparece no documento; a ponte é proposta deste estudo |
+
+Fontes: [Orientações Curriculares – Ensino Médio, SEDF (2008)](https://fep.if.usp.br/~profis/arquivo/docs_curriculares/DF/Distrito_Federal_Orientacoes_Curriculares_Ensino_Medio.pdf). Relatos de ensino citados como exemplos: [dissertação PROFMAT/UFJF (2013)](https://repositorio.ufjf.br/jspui/bitstream/ufjf/3433/1/paulogiovaneaparecidolemos.pdf), [CONEDU (2025)](https://editorarealize.com.br/editora/ebooks/conedu/2025/TRABALHO_COMPLETO_EV214_ID5659_TB2231_30102025150325.pdf), [Revista Arete, UEA](https://periodicos.uea.edu.br/index.php/arete/article/download/866/688) e [VIDYA (2023)](https://periodicos.ufn.edu.br/index.php/VIDYA/article/download/4229/3092/16094).
 
 ## 5. Arquitetura do código e dos dados
 
