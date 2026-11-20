@@ -7,6 +7,9 @@ não é regra de decisão. A regra de decisão (H1 / desfavorável à SBI / H3 /
 de interesse prático fixado no pré-registro, NA ESCALA DE g (valor de partida g = 0,30, a
 confirmar). O d da Tabela 4 (`amostra.py`) é parâmetro de planejamento amostral, e não de decisão.
 
+Limite: B e C entram agrupados (`tratado == 0`), ponderados pelo tamanho remanescente; A–B e A–C
+servem de sensibilidade. Contraste equiponderado (β_A − ½(β_B + β_C)) fica para antes do pré-registro.
+
 Observação: g é a diferença ajustada dividida pelo desvio-padrão agrupado de T1 dentro
 dos grupos (com fator J de Hedges); o IC de g divide os limites do IC da diferença pelo
 mesmo desvio-padrão (aproximação, adequada para um piloto).
@@ -57,6 +60,9 @@ def ancova(y1, y0, tratado, estrato=None, nivel: float = 0.95) -> ResultadoAncov
     gl = n - X.shape[1]
     if gl <= 0:
         raise ValueError("amostra insuficiente para o modelo")
+    if np.linalg.matrix_rank(X) < X.shape[1]:
+        raise ValueError("matriz do modelo singular (colinearidade): verifique estratos com um só braço "
+                         "ou sem variação; agrupe estratos ou remova o termo antes da ANCOVA")
     s2 = float(resid @ resid) / gl
     cov = s2 * np.linalg.inv(X.T @ X)
     dif, ep = float(beta[1]), float(np.sqrt(cov[1, 1]))

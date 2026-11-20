@@ -13,7 +13,7 @@ Formato de todos os arquivos: `{"meta": {...}, "dados": ...}`. Floats arredondad
 | `series_vazamento.json` | Duas séries autocorrelacionadas (300 × 30): sem sinal (acurácia real = acaso) e com sinal | Vazamento na validação aleatória × blocos temporais |
 | `padroes_temporais.json` | Características e padrões-alvo (240 × 30 → 240 × 16) | Gerador linear de padrões |
 | `bloqueio_cenarios.json` | 10 tabelas por organoide e condição (basal, veículo, AMPA, NMDA, AMPA+NMDA, três lavagens, TTX): efeito forte, sem efeito, n = 3, n = 20, falha de TTX, falha de lavagem, condição ausente e 3 com organoides-controle só com veículo (`grupo = "controle"`): efeito real, só deriva (os tratados parecem ter efeito; o efeito líquido é ~0) e poucos controles; ordem contrabalançada | Análise do bloqueio |
-| `qualificacao_organoides.json` | 7 casos para os critérios de qualificação (atividade, veículo, lavagem, TTX), com o veredito esperado | `bloqueio.qualificar_organoide` |
+| `qualificacao_organoides.json` | 10 casos para os critérios de qualificação (atividade, veículo, lavagem, TTX), com o veredito esperado | `bloqueio.qualificar_organoide` |
 | `esteira_itens.json` | 300 itens com saídas de 4 camadas tipadas: calibrada, superconfiante, subconfiante e com 25% de saídas inválidas (5 tipos de defeito) | Esteira: acurácia, ECE, Brier, saídas inválidas |
 | `snn_contagens.json` | Contagens de disparos de 2 organoides simulados em 4 condições (basal, AMPA, NMDA, AMPA+NMDA), 24 tentativas por sessão | Decodificação e efeito dos bloqueadores no silício |
 

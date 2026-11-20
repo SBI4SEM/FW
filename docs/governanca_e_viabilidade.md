@@ -32,7 +32,7 @@ Quem não documentar fica fora do escopo.
 - [ ] Os estudantes distinguem evidência de interpretação e reconhecem a carga normativa de termos como "aprendizado" e "senciência" aplicados a tecido in vitro
 
 ### 2.4 Ética da pesquisa com os estudantes
-- [ ] Submissão ao sistema CEP/CONEP e aprovação prévia (Resoluções CNS nº 466/2012 e nº 510/2016)
+- [ ] Submissão ao sistema CEP/CONEP no mês 2 e aprovação prévia (Resoluções CNS nº 466/2012 e nº 510/2016); instrumentos finais e parceiro, por emenda
 - [ ] TCLE assinado pelos responsáveis e Termo de Assentimento
 - [ ] Anonimização
 - [ ] Garantia de que a recusa não afeta a avaliação escolar nem o acesso ao enriquecimento
@@ -49,7 +49,7 @@ Quem não documentar fica fora do escopo.
 
 | Condição | Prazo | Se falhar |
 |---|---|---|
-| Aprovação do CEP | Fim do mês 4 (T0 e randomização abrem o mês 5) | Deslocar as etapas seguintes; não executar versão reduzida |
+| Aprovação do CEP | Fim do mês 4 (T0 e randomização abrem o mês 5); submissão no mês 2, com ajustes posteriores por emenda | Deslocar as etapas seguintes; não executar versão reduzida |
 | Ao menos um parceiro habilitado, com documentação por escrito | Fim do mês 4 (pedidos partem no mês 1) | O braço A não usa tecido vivo: adiar o Tipo III ou usar registros públicos de culturas neuronais (disponibilidade e licença não verificadas), registrado como **emenda antes da randomização**, sem substituição silenciosa por simulação |
 | Plataformas contratadas | A partir do mês 5 | Idem |
 

@@ -24,6 +24,8 @@ def divisoes_por_blocos(n: int, n_blocos: int = 5, gap: int = 0):
     for b in range(n_blocos):
         ini, fim = arestas[b], arestas[b + 1]
         treino = np.concatenate([np.arange(0, max(0, ini - gap)), np.arange(min(n, fim + gap), n)])
+        if len(treino) == 0:
+            raise ValueError(f"gap = {gap} deixa o bloco {b} sem amostras de treino")
         yield treino, np.arange(ini, fim)
 
 
@@ -134,6 +136,8 @@ def acaso_por_permutacao(X, y, n_perm: int = 100, n_blocos: int = 5, gap: int = 
     _, obs = avaliar_classificacao(X, y, n_blocos, gap, lam)
     rng = np.random.default_rng(seed)
     n = len(y)
+    if n < 10:
+        raise ValueError("permutação circular exige n >= 10 (com menos, o deslocamento pode ser nulo)")
     nulas = []
     for _ in range(n_perm):
         k = int(rng.integers(n // 10, n - n // 10))

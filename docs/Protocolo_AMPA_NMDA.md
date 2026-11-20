@@ -46,7 +46,7 @@ O braço A usa **hiPSC humana**, em nuvem (Cortical Cloud/CL1 ou FinalSpark). A 
 | F4 | A mudança de resposta evocada após estimulação tetânica depende de NMDA (some com AP5) e não persiste 45 min depois | Robbins et al. (2026), lido só no resumo |
 | F5 | Todos os efeitos são reversíveis na lavagem | Controle de método |
 
-F1, F2 e F4 são **hipóteses mecanísticas plausíveis, não achados**. Vêm de trabalhos em organoides de camundongo (Robbins et al., 2026); testá-las em hiPSC humana é extensão translacional (§1.2).
+F1, F2 e F4 são **hipóteses mecanísticas plausíveis, não achados**. Vêm de trabalhos em organoides de camundongo (Robbins et al., 2026); testá-las em hiPSC humana é extensão translacional (§1.2). **A rede simulada (braço B) não tem plasticidade sináptica e não reproduz F4:** no silício valem só as hipóteses de transmissão aguda (F1, F2, F3 e F5); F4 fica como fenômeno do tecido vivo, discutido conceitualmente em sala.
 
 ## 3. Teste 1: farmacologia AMPA e NMDA
 
@@ -139,14 +139,14 @@ Interface por contrato JSON, agnóstica à ferramenta (`docs/contrato_esteira.sc
 
 ### 5.3 Métricas (`esteira.executar_esteira`)
 
-Acurácia (saída inválida conta como erro) com IC por bootstrap **por organoide**; Brier e ECE (calibração); taxa de saída inválida; latência; curva risco-cobertura; **ITR em bits/min** (fórmula de Wolpaw, usual em BCI, `itr_wolpaw`), que torna a esteira comparável ao braço C. **Conformidade de esquema não é acerto:** a correção semântica se avalia à parte.
+Acurácia (saída inválida conta como erro) com IC por bootstrap **por organoide**; Brier e ECE (calibração); taxa de saída inválida; latência; curva risco-cobertura; **ITR em bits/min** (fórmula de Wolpaw, usual em BCI, `itr_wolpaw`), que torna a esteira comparável ao braço C. **Conformidade de esquema não é acerto:** a correção semântica se avalia à parte. **Limite de calibração:** as probabilidades da `CamadaOrganoide` vêm de softmax sobre escores lineares (ridge em alvos −1/+1) e são **não calibradas**; ECE e Brier do organoide refletem isso e **não devem ser usados para declarar inferioridade frente à camada tipada**. Calibração (um parâmetro de temperatura ajustado em validação interna ao treino) é melhoria prevista antes do pré-registro; acurácia, latência e risco-cobertura não dependem dela.
 
 **Limite:** a decisão está no decodificador. "Camada de decisão" descreve a arquitetura, não prova inteligência do tecido.
 
 ## 6. Como isto se encaixa nos braços
 
 - **Braço A (SBI):** executa os Testes 1, 2 e 3 (o Teste 1 exige parceiro que aplique bloqueadores).
-- **Braço B (silício):** mesma tarefa, com sinapses AMPA e NMDA simuladas e "bloqueio" por redução da condutância (`snn.py`). O contraste é limpo e reprodutível por semente, o que serve a H2. O TTX é modelado como bloqueio de canais de Na⁺ dependentes de voltagem (`bloqueio_na`: sem spikes, sinapses intactas), e **não** como bloqueio total de AMPA+NMDA: ambos silenciam os spikes, mas por mecanismos diferentes (`vm_medio_exc` os distingue: repouso sem AMPA e NMDA; despolarizada, sem spikes, sob TTX). É um modelo didático, sem canais de Na⁺ explícitos.
+- **Braço B (silício):** mesma tarefa, com sinapses AMPA e NMDA simuladas e "bloqueio" por redução da condutância (`snn.py`). O contraste é limpo e reprodutível por semente, o que serve a H2. O TTX é modelado como bloqueio de canais de Na⁺ dependentes de voltagem (`bloqueio_na`: sem spikes, sinapses intactas), e **não** como bloqueio total de AMPA+NMDA: ambos silenciam os spikes, mas por mecanismos diferentes (`vm_medio_exc` os distingue: repouso sem AMPA e NMDA; despolarizada, sem spikes, sob TTX). É um modelo didático, sem canais de Na⁺ explícitos. **Limite:** `snn.py` não tem regra de plasticidade (não reproduz F4); uma facilitação transitória didática, se um dia incluída, seria opcional, desligada por padrão e rotulada como ilustração, nunca como prova biológica.
 - **Braço C (EEG aberto):** não há manipulação de AMPA ou NMDA. Equivalente: o Teste 2 em registros públicos (`braco_C_eeg.md`). A assimetria já declarada se alarga e deve ser registrada. Para não agravar a "lealdade do pesquisador" (Tabela 5 do artigo), a tarefa-padrão do braço C (conjunto, divisão por sessão ou bloco, métricas e plano de análise) deve ser escrita com a mesma granularidade da do A **antes da revisão externa dos materiais** (meses 3 e 4).
 
 ## 7. A pergunta própria de cada grupo

@@ -20,7 +20,10 @@ aleatório é a alternativa quando se quer usar as janelas.
 Para cada condição calcula-se, por organoide, o efeito = valor(condição) - valor(referência,
 por padrão o veículo), e então: média, IC percentil por bootstrap entre organoides (apenas
 com n >= 5; abaixo disso devolve None) e teste de permutação por troca de sinais (exato,
-n <= 15). Verificações: recuperação na lavagem (|lavagem - basal| <= tolerância, absoluta ou relativa) e
+n <= 15). O teste exato tem piso discreto: com n organoides, o menor p bilateral é 2/2^n
+(0,0625 com n = 5, nunca abaixo de 0,05), informado em `p_minimo_possivel`; não significativo
+com n pequeno não é ausência de efeito. Organoides reprovados em `qualificar_organoide` devem
+ser retirados ANTES desta análise, que não os filtra. Verificações: recuperação na lavagem (|lavagem - basal| <= tolerância, absoluta ou relativa) e
 controle com TTX (valor no nível do acaso ou abaixo). Com poucos organoides, os resultados
 são descritivos.
 
@@ -242,6 +245,7 @@ def analisar_bloqueio(dados, referencia="veiculo", condicoes=("AMPA", "NMDA", "A
             "n": len(e), "media_efeito": float(np.mean(e)),
             "ic95_bootstrap": _ic_boot(e) if len(e) >= 5 else None,
             "p_permutacao": _permutacao_sinais(e),
+            "p_minimo_possivel": (2 / 2 ** len(e)) if len(e) <= 15 else None,
             "efeitos_por_organoide": ef,
         }
         if len(e) < 5:
@@ -258,6 +262,7 @@ def analisar_bloqueio(dados, referencia="veiculo", condicoes=("AMPA", "NMDA", "A
                 "diferenca_tratado_menos_controle": float(np.mean(e) - np.mean(ec)),
                 "ic95_bootstrap": _ic_boot_diferenca(e, ec) if ok_ic else None,
                 "p_permutacao": _permutacao_grupos(e, ec),
+                "p_minimo_possivel": 2 / math.comb(len(e) + len(ec), len(e)) if math.comb(len(e) + len(ec), len(e)) <= 20000 else None,
             }
             if not ok_ic:
                 res["avisos"].append(f"{cond}: n < 5 em tratados ou controles, IC do efeito líquido não calculado")
@@ -265,12 +270,23 @@ def analisar_bloqueio(dados, referencia="veiculo", condicoes=("AMPA", "NMDA", "A
     def recuperou(lav, base):
         dif = abs(lav - base)
         return dif <= tol_lavagem if escala_lavagem == "absoluta" else dif / abs(base) <= tol_lavagem
-    rec = [recuperou(v[l], v["basal"]) for v in por.values() for l in LAVAGENS if l in v and "basal" in v]
+
+    def pares_lavagem(grupo):
+        """(lavagem, basal) avaliáveis; na escala relativa, basal nulo não tem razão definida."""
+        pares = [(v[l], v["basal"]) for v in grupo.values() for l in LAVAGENS if l in v and "basal" in v]
+        if escala_lavagem == "relativa" and any(b == 0 for _, b in pares):
+            res["avisos"].append("basal nulo: recuperação relativa não definida; essas lavagens foram excluídas da verificação")
+            pares = [(l, b) for l, b in pares if b != 0]
+        return pares
+    sem_basal = [o for o, v in por.items() if any(l in v for l in LAVAGENS) and "basal" not in v]
+    if sem_basal:
+        res["avisos"].append(f"lavagem sem basal em {len(sem_basal)} organoide(s): recuperação não verificada")
+    rec = [recuperou(l, b) for l, b in pares_lavagem(por)]
     if rec:
         res["fracao_recuperacao_lavagem"] = float(np.mean(rec))
         if np.mean(rec) < 1:
             res["avisos"].append("há organoides sem recuperação na lavagem: efeitos podem ser irreversíveis ou haver deriva")
-    rec_c = [recuperou(v[l], v["basal"]) for v in ctrl.values() for l in LAVAGENS if l in v and "basal" in v]
+    rec_c = [recuperou(l, b) for l, b in pares_lavagem(ctrl)]
     if rec_c:
         res["fracao_recuperacao_lavagem_controle"] = float(np.mean(rec_c))
         if np.mean(rec_c) < 1:

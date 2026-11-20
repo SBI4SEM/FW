@@ -18,6 +18,9 @@ quando `grupos` é dado: o ORGANOIDE, e não o item, é a unidade experimental),
 taxa de saída inválida, latência (mediana e p95), curva risco-cobertura e ITR de Wolpaw
 (com tempo de decisão por camada).
 
+Calibração: `CamadaOrganoide` usa softmax sobre escores lineares do decodificador (não calibrados);
+sua ECE e seu Brier não devem ser lidos como inferioridade frente a uma camada tipada calibrada.
+
 Codificação da entrada: o item é o padrão de entrada definido pela esteira. Cada camada o recebe
 na sua própria codificação (estimulação elétrica para o organoide; serialização no esquema tipado
 para a camada tipada). A função de codificação de cada camada é parte do adaptador, deve carregar
@@ -42,13 +45,21 @@ class Decisao:
 
 
 class CamadaRegraFixa:
-    def __init__(self, nome: str, regra: Callable[[Any], Any]):
+    """Regra determinística. Com `esquema`, rótulo fora dele é saída INVÁLIDA; exceção na regra
+    também é registrada como inválida (mesmo critério de `CamadaTipada`)."""
+
+    def __init__(self, nome: str, regra: Callable[[Any], Any], esquema: Optional[Sequence] = None):
         self.nome, self.regra = nome, regra
+        self.esquema = None if esquema is None else list(esquema)
 
     def decidir(self, item) -> Decisao:
         t0 = time.perf_counter()
-        r = self.regra(item)
-        return Decisao(r, None, (time.perf_counter() - t0) * 1e3)
+        try:
+            r = self.regra(item)
+            ok = self.esquema is None or r in self.esquema
+        except Exception:
+            r, ok = None, False
+        return Decisao(r if ok else None, None, (time.perf_counter() - t0) * 1e3, ok)
 
 
 class CamadaTipada:
@@ -128,8 +139,10 @@ def _ece(conf, acerto, n_bins=10):
     return float(e)
 
 
-def bootstrap_ic(valores, grupos=None, n_boot: int = 2000, seed: int = 0, nivel: float = 0.95):
-    """IC percentil da média; reamostra por conglomerado se `grupos` for dado."""
+def bootstrap_ic(valores, grupos=None, n_boot: int = 2000, seed: int = 0, nivel: float = 0.95,
+                 min_grupos: int = 5):
+    """IC percentil da média; reamostra por conglomerado se `grupos` for dado. Com menos de
+    `min_grupos` conglomerados (o mesmo piso de `bloqueio`), devolve None: o IC seria subcoberto."""
     v = np.asarray(valores, float)
     rng = np.random.default_rng(seed)
     if grupos is None:
@@ -137,6 +150,8 @@ def bootstrap_ic(valores, grupos=None, n_boot: int = 2000, seed: int = 0, nivel:
     else:
         g = np.asarray(grupos)
         ids = np.unique(g)
+        if len(ids) < min_grupos:
+            return None
         por = {k: v[g == k] for k in ids}
         medias = []
         for _ in range(n_boot):
@@ -223,6 +238,7 @@ def executar_esteira(itens, rotulos, camadas, esquema, grupos=None, n_boot: int 
             res["t_decisao_s"] = float(t_cam)
             res["itr_bits_min"] = itr_wolpaw(res["acuracia"], len(esquema), t_cam)
         com_p = [i for i, d in enumerate(dec) if d.valida and d.probs is not None]
+        res["n_com_probabilidades"] = len(com_p)  # Brier, ECE e risco-cobertura usam só estes itens
         if com_p:
             P = np.array([dec[i].probs for i in com_p])
             if P.shape[1] != len(esquema):

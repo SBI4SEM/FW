@@ -47,12 +47,17 @@ Preencha e registre em plataforma pública **antes da randomização**. Guarde o
 - Relato: diferenças ajustadas e g de Hedges com IC de 95%; p não é regra de decisão.
 - Dados faltantes: ITT com [método de imputação pré-especificado]; casos completos como sensibilidade (`analise.completos`).
 - **Escopo do pacote de código.** `analise.py` implementa só o desfecho primário (ANCOVA, g de Hedges, regra de decisão, fluxo e atrito, casos completos). **Ainda não estão codificados e devem ser especificados aqui:** (a) a imputação para a análise por intenção de tratar; (b) a análise de H2 (rubrica RED na tarefa aberta e contraste A–B contra A–C); (c) a moderação pela preferência de tema; (d) a análise por protocolo como sensibilidade completa.
+- **Regra de ITT (propor e fixar):** opções simples e auditáveis para T1 ausente: (a) regressão de T1 sobre T0 e estrato, dentro de cada braço; (b) T1 = T0 (ganho zero), como sensibilidade conservadora frente aos casos completos. Escolha: [ ]
+- **H2:** o escore da rubrica (ou o subescore de variabilidade e incerteza) entra na mesma `analise.ancova`, comparando A com B e A com C de forma exploratória; não exige método novo.
+- **Moderação por preferência de tema:** com 15 a 30 estudantes por braço, a interação tem pouco poder. Registrar a variável `alinhado` (1 = caiu no tema preferido) e relatar médias de ganho por estrato de forma descritiva; termo de interação só como exploração secundária.
+- **Contraste primário:** hoje B e C entram agrupados (`tratado == 0`), o que pondera B e C pelo tamanho amostral remanescente e mistura a variação entre eles no desvio-padrão. Os contrastes A–B e A–C servem de sensibilidade. Alternativa a decidir: modelo com colunas separadas para B e C e contraste β_A − ½(β_B + β_C). Escolha: [ ]
 - Tamanho amostral: por viabilidade e precisão, não por potência. Valores de referência: `amostra.tabela4()`. Correlação pré-pós suposta (0,6): [substituir pelo dado do piloto].
 
 ## 8. Tarefa-padrão do braço A (ver `Protocolo_AMPA_NMDA.md`)
 - Condições, ordem contrabalançada, critérios de qualidade (tolerância de lavagem, margem de TTX): [ ]
 - Janelas temporais, `gap`, características, `lam` do decodificador: [ ]
 - Camadas da esteira, regra fixa, versão do modelo da camada tipada, limiar de confiança: [ ]
+- Calibração das probabilidades do organoide (hoje softmax bruto de escores lineares, não calibrado): ajustar temperatura ou declarar que ECE e Brier do organoide não sustentam inferioridade: [ ]
 - Hipótese H-T1 (direção e magnitude, com a fonte): [ ]
 - Organoides-controle só com veículo: número, janelas pareadas aos tratados e comparação tratados × controles (efeito líquido; `bloqueio.analisar_bloqueio` com `grupo`): [ ]
 - Origem do tecido: hiPSC humana (`origem_do_tecido.md`); consentimento do doador, comitê de origem e biossegurança, por escrito: [ ]

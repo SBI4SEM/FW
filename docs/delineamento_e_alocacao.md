@@ -29,8 +29,8 @@ python -m sbi4sem.randomizacao --estratos "EscolaX-1:30,EscolaX-2:30" --saida se
 
 | Meses | Atividades |
 |---|---|
-| 1–2 | Busca sistemática registrada em bases de educação; material-base; **pedidos de documentação aos parceiros já no mês 1** |
-| 3–4 | Parcerias; materiais dos comparadores com revisão externa; adaptação dos instrumentos; pré-registro; **submissão ao CEP no início do mês 3** |
+| 1–2 | Busca sistemática registrada em bases de educação; material-base; **pedidos de documentação aos parceiros já no mês 1**; **submissão ao CEP no mês 2**, com TCLE, TALE e instrumentos preliminares |
+| 3–4 | Parcerias; materiais dos comparadores com revisão externa; adaptação dos instrumentos; pré-registro; a adaptação final dos instrumentos e a definição do parceiro tramitam como **emenda** ao protocolo submetido |
 | 5 | Consentimento e assentimento, T0, randomização, início do Tipo I |
 | 5–10 | Tipos I, II e III (dois meses cada); T1 ao término do Tipo III |
 | 11–12 | Análise pré-registrada, com correção cega ao braço; redação |

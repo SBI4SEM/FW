@@ -44,7 +44,7 @@ camada = esteira.CamadaTipada("jev", minha_funcao, esquema=["a", "b", "c"])   # 
 
 `python exemplos/benchmark_carga.py --saida resultado.json` mede o tempo de execução das rotinas, da suíte de testes e da demonstração (estudo observacional da seção 4.4 do artigo). Os tempos dependem do equipamento; o JSON registra o ambiente.
 
-## Testes (95)
+## Testes (103)
 
 | Arquivo | O que cobre |
 |---|---|

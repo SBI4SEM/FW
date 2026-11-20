@@ -15,6 +15,7 @@ spike é gerado. Após cada simulação, `vm_medio_exc` guarda o potencial de me
 neurônios excitatórios, que separa os dois controles: com AMPA+NMDA bloqueados a membrana
 fica perto do repouso; com TTX ela fica despolarizada pela entrada, mas sem spikes.
 
+SEM PLASTICIDADE sináptica: só a transmissão aguda (hipóteses F1, F2, F3 e F5); não reproduz F4.
 Parâmetros são valores didáticos típicos, NÃO ajustados a dados de organoides. Nada aqui
 prevê o resultado do experimento com tecido vivo: serve para o estudante praticar o desenho
 e a análise, com a vantagem de ser reprodutível por semente.
@@ -101,7 +102,7 @@ class RedeSNN:
             gG = gG * dG + self.Winh @ spk
             bmg = 1.0 / (1.0 + (p.mg / 3.57) * np.exp(-0.062 * v))
             dv = (-(v - p.v_rep) + gA * (p.e_exc - v) + gN * bmg * (p.e_exc - v) + gG * (p.e_inh - v)) / p.tau_m
-            v = v + p.dt_ms * dv + rng.normal(0, 0.3, self.n)
+            v = v + p.dt_ms * dv + rng.normal(0, 0.3 * np.sqrt(p.dt_ms / 0.5), self.n)  # ruído ~ sqrt(dt); idêntico em dt = 0,5 ms
             ativo = refr <= 0
             v = np.where(ativo, v, p.v_reset)
             spk = ((v >= v_lim) & ativo & gera_spikes).astype(float)

@@ -80,7 +80,7 @@ flowchart TD
 
 ## 3. Cronograma de 12 meses
 
-O ano no eixo é só referência de escala: os números são os **meses do projeto**. Se a aprovação do CEP não vier a tempo, as etapas seguintes são deslocadas, e não executadas em versão reduzida.
+O ano no eixo é só referência de escala: os números são os **meses do projeto**. Se a aprovação do CEP não vier a tempo, as etapas seguintes são deslocadas, e não executadas em versão reduzida. A submissão ao CEP ocorre no mês 2, com os termos e os instrumentos preliminares; a adaptação final dos instrumentos e a definição do parceiro tramitam como emenda, o que amplia a janela de tramitação de dois para três meses.
 
 ```mermaid
 gantt
@@ -92,7 +92,7 @@ gantt
     Pedidos de documentação aos parceiros     :a2, 2027-01-01, 30d
     Parcerias e materiais dos comparadores    :a3, 2027-03-01, 61d
     Instrumentos e pré-registro               :a4, 2027-03-01, 61d
-    Submissão ao CEP no início do mês 3       :milestone, m1, 2027-03-01, 0d
+    Submissão ao CEP no mês 2                :milestone, m1, 2027-02-01, 0d
     Prazo para CEP e parceiro habilitado      :milestone, m2, 2027-04-30, 0d
     section Intervenção
     Consentimento, T0 e randomização          :b1, 2027-05-01, 30d
@@ -192,7 +192,7 @@ Se um estágio não for alcançado até o fim do mês 4, a mudança vira **emend
 - [`docs/braco_C_eeg.md`](docs/braco_C_eeg.md): conjuntos públicos de EEG e algoritmos suportados pelo MetaBCI, com divisão por sessão ou bloco e o mesmo decodificador linear dos demais braços.
 - [`docs/leitura_critica.md`](docs/leitura_critica.md): atividade de neuroética que rastreia afirmações de divulgação (eficiência energética, DishBrain, preços, robôs) até a fonte primária.
 
-### 4.5 Pontes entre química, biologia e matemática
+### 4.5 Pontes entre química, biologia, matemática e física
 
 A tabela reúne os conteúdos que o documento curricular da SEDF (2008) traz em cada área. Quando a ligação entre duas áreas não está no documento, a célula diz isso. Exemplos sem correspondência no documento são apenas ilustrativos. Não é um levantamento de práticas docentes: os relatos de ensino citados foram localizados em busca exploratória e não foram sistematizados.
 
@@ -206,6 +206,8 @@ A tabela reúne os conteúdos que o documento curricular da SEDF (2008) traz em 
 | Gráficos e curvas | solubilidade × temperatura | transferência de matéria e energia "graficamente" | gráficos e funções | leitura de gráficos nas três áreas |
 | Balanceamento e sistemas lineares | "balanceamento por tentativas" | — | sistemas lineares (regra de Cramer, escalonamento) | conteúdos separados; a ponte é proposta deste estudo |
 | Equilíbrio e homeostase | equilíbrio químico; princípio de Le Chatelier | homeostase | quociente de concentrações | homeostase não aparece no documento; a ponte é proposta deste estudo |
+
+**Ponte com a física.** A membrana do neurônio se comporta como um circuito RC: a bicamada lipídica age como capacitor, e os canais iônicos em repouso, como resistência de vazamento. Num circuito RC, a tensão decai exponencialmente com constante de tempo τ = RC, a mesma forma do decaimento da tabela acima. O modelo LIF de `snn.py` escreve a dinâmica como τ_m dV/dt = −(V − V_rep) + entradas, com τ_m = 20 ms. Na SEDF (2008), capacitores, Leis de Ohm e circuitos elétricos constam da 3ª série de Física, com a expectativa de calcular tensões e correntes em circuitos reais. A biologia do documento não traz sistema nervoso, e a ligação com o neurônio é proposta deste estudo.
 
 Fontes: [Orientações Curriculares – Ensino Médio, SEDF (2008)](https://fep.if.usp.br/~profis/arquivo/docs_curriculares/DF/Distrito_Federal_Orientacoes_Curriculares_Ensino_Medio.pdf). Relatos de ensino citados como exemplos: [dissertação PROFMAT/UFJF (2013)](https://repositorio.ufjf.br/jspui/bitstream/ufjf/3433/1/paulogiovaneaparecidolemos.pdf), [CONEDU (2025)](https://editorarealize.com.br/editora/ebooks/conedu/2025/TRABALHO_COMPLETO_EV214_ID5659_TB2231_30102025150325.pdf), [Revista Arete, UEA](https://periodicos.uea.edu.br/index.php/arete/article/download/866/688) e [VIDYA (2023)](https://periodicos.ufn.edu.br/index.php/VIDYA/article/download/4229/3092/16094).
 
@@ -230,7 +232,7 @@ flowchart LR
         SIN["sintetico"]
         BAT["bateria"]
     end
-    TST["tests<br/>95 testes, cobertura de linhas 99%"]
+    TST["tests<br/>103 testes, cobertura de linhas 99%"]
     SNN -- "contagens de disparos" --> DEC
     DEC -- "acurácia por condição" --> BLO
     DEC -- "camada organoide" --> EST
@@ -278,7 +280,7 @@ FW/
 | 5.2.3 Tarefa-padrão do braço A; tecido hiPSC humana | `docs/Protocolo_AMPA_NMDA.md`; `docs/origem_do_tecido.md`; `bloqueio.py`, `decodificador.py`, `esteira.py` |
 | Braços B e C (equivalentes) | `snn.py` (sinapses AMPA e NMDA; TTX como bloqueio de Na⁺); decodificador em EEG público (`decodificador.py`, `docs/braco_C_eeg.md`) |
 | 5.3 Delineamento e alocação | `docs/delineamento_e_alocacao.md`; `randomizacao.py` |
-| 5.4 Desfechos, instrumentos, cronograma | `docs/instrumentos_e_fidelidade.md`; `templates/` |
+| 5.4 Desfechos e instrumentos (o cronograma não consta do artigo; ver `docs/delineamento_e_alocacao.md`) | `docs/instrumentos_e_fidelidade.md`; `templates/` |
 | 5.5 Análise e tamanho amostral | `analise.py` (ANCOVA, g de Hedges; núcleo parcial: ver a seção 9); `amostra.py` (Tabela 4) |
 | 5.6 Ameaças à validade | `docs/ameacas_validade.md`; `analise.fluxo`, `analise.proporcao_teto` |
 | 5.7 Ética e viabilidade | `docs/governanca_e_viabilidade.md` |
@@ -288,7 +290,7 @@ FW/
 ```bash
 cd code
 pip install -r requirements.txt
-python -m pytest                          # 95 testes
+python -m pytest                          # 103 testes
 python exemplos/demo_completo.py          # fluxo completo, com dados sintéticos
 python exemplos/benchmark_carga.py --saida resultado.json   # tempos de execução (seção 4.4 do artigo)
 python -m sbi4sem.amostra                 # reproduz a Tabela 4 do artigo

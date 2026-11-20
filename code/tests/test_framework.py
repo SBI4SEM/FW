@@ -308,3 +308,62 @@ def test_snn_bloqueio_reduz_atividade_e_conjunto_e_decodificavel():
     X, y = gerar_conjunto(rede, pad, n_por_classe=24, seed=1)
     assert X.shape == (72, rede.p.n_exc * 4)
     assert dec.avaliar_classificacao(X, y, 4, 3, lam=50.0)[1] > 1 / 3 + 0.2
+
+
+# ---------- casos de borda (revisão de 20/11/2026) ----------
+def test_lavagem_relativa_com_basal_nulo_nao_divide_por_zero():
+    d = [{"organoide": "o0", "condicao": c, "valor": v} for c, v in
+         (("basal", 0.0), ("veiculo", 0.0), ("AMPA", 0.0), ("lavagem1", 0.0))]
+    r = bloqueio.analisar_bloqueio(d, condicoes=("AMPA",), escala_lavagem="relativa")
+    assert any("basal nulo" in a for a in r["avisos"])
+
+
+def test_lavagem_sem_basal_avisa():
+    d = [{"organoide": "o0", "condicao": c, "valor": 0.8} for c in ("veiculo", "AMPA", "lavagem1")]
+    r = bloqueio.analisar_bloqueio(d, condicoes=("AMPA",))
+    assert any("sem basal" in a for a in r["avisos"])
+
+
+def test_piso_do_p_exato_e_informado():
+    r = bloqueio.analisar_bloqueio(_organoides(5), chance=1 / 3)
+    assert r["AMPA"]["p_minimo_possivel"] == pytest.approx(2 / 32)
+    assert r["AMPA"]["p_permutacao"] >= r["AMPA"]["p_minimo_possivel"] - 1e-12
+
+
+def test_ancova_colinear_da_erro_claro():
+    y0 = [1.0, 2.0, 3.0, 4.0, 5.0, 6.0]
+    tratado = [1, 1, 1, 0, 0, 0]
+    estrato = ["E1", "E1", "E1", "E2", "E2", "E2"]  # estrato idêntico ao braço
+    with pytest.raises(ValueError, match="singular"):
+        analise.ancova([2, 3, 4, 1, 2, 3], y0, tratado, estrato)
+
+
+def test_decodificador_bordas():
+    with pytest.raises(ValueError, match="sem amostras de treino"):
+        list(dec.divisoes_por_blocos(10, 2, gap=10))
+    with pytest.raises(ValueError, match="n >= 10"):
+        dec.acaso_por_permutacao(np.zeros((8, 2)), np.tile([0, 1], 4), n_perm=2, n_blocos=2)
+
+
+def test_regra_fixa_valida_esquema_e_excecao():
+    cam = esteira.CamadaRegraFixa("r", lambda i: 1 / i if i else 7, esquema=[0, 1])
+    assert cam.decidir(0).valida is False and cam.decidir(0).rotulo is None   # 7 fora do esquema
+    assert cam.decidir(1).valida is True
+    falha = esteira.CamadaRegraFixa("f", lambda i: 1 / 0, esquema=[0, 1])
+    assert falha.decidir(1).valida is False
+    assert esteira.CamadaRegraFixa("sem", lambda i: 9).decidir(1).valida  # sem esquema: comportamento antigo
+
+
+def test_bootstrap_por_conglomerado_exige_minimo_de_grupos():
+    v = np.ones(30)
+    assert esteira.bootstrap_ic(v, np.repeat(np.arange(3), 10), 100) is None
+    assert esteira.bootstrap_ic(v, np.repeat(np.arange(6), 5), 100) is not None
+    r = esteira.executar_esteira(list(range(20)), [0] * 20, [esteira.CamadaRegraFixa("r", lambda i: 0)], [0, 1], n_boot=50)
+    assert r["r"]["n_com_probabilidades"] == 0
+
+
+def test_ruido_snn_escala_com_dt_e_nao_muda_o_padrao():
+    pad = gerar_padroes(3, seed=0)
+    a = RedeSNN(seed=4).simular(pad[0])
+    b = RedeSNN(seed=4).simular(pad[0])
+    assert np.array_equal(a, b)
