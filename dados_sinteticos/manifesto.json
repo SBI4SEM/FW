@@ -1,0 +1,67 @@
+{
+ "meta": {
+  "sintetico": true,
+  "aviso": "DADOS SINTÉTICOS gerados por simulação para testar software. Não são dados de estudantes nem de organoides e não constituem evidência sobre nenhum dos dois.",
+  "descricao": "Índice e somas de verificação da bateria sintética.",
+  "versao_bateria": "4",
+  "versao_pacote": "0.1.0"
+ },
+ "dados": [
+  {
+   "arquivo": "estudantes_cenarios.json",
+   "descricao": "Cenários de piloto (braço, estrato, T0, T1) com efeito verdadeiro conhecido, atrito e teto.",
+   "bytes": 297811,
+   "sha256": "986d28c1da0f1b77359f06175cd1fe4ffa4a888770485cedb11ce8837d75f452",
+   "depende_de_plataforma": false
+  },
+  {
+   "arquivo": "randomizacao_casos.json",
+   "descricao": "Sequências de alocação estratificada com semente e carimbo SHA-256.",
+   "bytes": 6248,
+   "sha256": "47aaaa48c51ded8512328f924b06da0622bb63d06a08c9529c2953f86ec5e4bd",
+   "depende_de_plataforma": false
+  },
+  {
+   "arquivo": "series_vazamento.json",
+   "descricao": "Séries autocorrelacionadas com e sem sinal, para demonstrar vazamento na validação aleatória.",
+   "bytes": 172329,
+   "sha256": "52b37c358e72013e16de5dfe9b23f1b0e18e208a7d2858623bf899c21d103fca",
+   "depende_de_plataforma": false
+  },
+  {
+   "arquivo": "padroes_temporais.json",
+   "descricao": "Características e padrões-alvo para o gerador linear de padrões temporais.",
+   "bytes": 104952,
+   "sha256": "a05fc4868f0443b254b17b32ae72d35a7d32f14f245911c9280335b3a17d61f0",
+   "depende_de_plataforma": false
+  },
+  {
+   "arquivo": "bloqueio_cenarios.json",
+   "descricao": "Tabelas por organoide e condição (basal, veículo, AMPA, NMDA, lavagens, TTX), com falhas de controle e organoides-controle só com veículo (grupo \"controle\") e deriva.",
+   "bytes": 82576,
+   "sha256": "c15388e2e533b68bdb2d7e3dbe6fb3224f327227176915f0b707e8f72cf1306a",
+   "depende_de_plataforma": false
+  },
+  {
+   "arquivo": "qualificacao_organoides.json",
+   "descricao": "Casos para os critérios de qualificação de organoides (atividade, veículo, lavagem, TTX).",
+   "bytes": 2503,
+   "sha256": "763ef61e82e4f54af932c02b61140309a37b0e08e7cfb27c945fbfbc73933e97",
+   "depende_de_plataforma": false
+  },
+  {
+   "arquivo": "esteira_itens.json",
+   "descricao": "Saídas de camadas de decisão tipadas (calibrada, superconfiante, subconfiante, com saídas inválidas).",
+   "bytes": 31071,
+   "sha256": "17b63587230bdcd40e82fcce5583b25d4d43ed2155bda45626f0dbab6b4fa626",
+   "depende_de_plataforma": false
+  },
+  {
+   "arquivo": "snn_contagens.json",
+   "descricao": "Contagens de disparos da rede LIF AMPA/NMDA (2 organoides simulados, 4 condições).",
+   "bytes": 65619,
+   "sha256": "646999337841a7550cc3331d1d385aecbc37355735c5780c6c907c04b62a0eea",
+   "depende_de_plataforma": true
+  }
+ ]
+}

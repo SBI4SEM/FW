@@ -1,0 +1,4713 @@
+{
+ "meta": {
+  "sintetico": true,
+  "aviso": "DADOS SINTÉTICOS gerados por simulação para testar software. Não são dados de estudantes nem de organoides e não constituem evidência sobre nenhum dos dois.",
+  "descricao": "Tabelas por organoide e condição (basal, veículo, AMPA, NMDA, lavagens, TTX), com falhas de controle e organoides-controle só com veículo (grupo \"controle\") e deriva.",
+  "versao_bateria": "4",
+  "versao_pacote": "0.1.0"
+ },
+ "dados": [
+  {
+   "id": "efeito_ampa_forte_n8",
+   "descricao": "AMPA reduz a acurácia em 0,30; NMDA em 0,10; 8 organoides.",
+   "chance": 0.333333,
+   "linhas": [
+    {
+     "organoide": "o0",
+     "condicao": "basal",
+     "valor": 0.814591
+    },
+    {
+     "organoide": "o0",
+     "condicao": "veiculo",
+     "valor": 0.80027
+    },
+    {
+     "organoide": "o0",
+     "condicao": "AMPA",
+     "valor": 0.534672
+    },
+    {
+     "organoide": "o0",
+     "condicao": "NMDA",
+     "valor": 0.672973
+    },
+    {
+     "organoide": "o0",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.464568
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem1",
+     "valor": 0.808863
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem2",
+     "valor": 0.830622
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem3",
+     "valor": 0.837888
+    },
+    {
+     "organoide": "o0",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o1",
+     "condicao": "basal",
+     "valor": 0.807343
+    },
+    {
+     "organoide": "o1",
+     "condicao": "veiculo",
+     "valor": 0.812737
+    },
+    {
+     "organoide": "o1",
+     "condicao": "AMPA",
+     "valor": 0.467095
+    },
+    {
+     "organoide": "o1",
+     "condicao": "NMDA",
+     "valor": 0.701883
+    },
+    {
+     "organoide": "o1",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.391078
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem1",
+     "valor": 0.807402
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem2",
+     "valor": 0.726348
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem3",
+     "valor": 0.760626
+    },
+    {
+     "organoide": "o1",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o2",
+     "condicao": "basal",
+     "valor": 0.791216
+    },
+    {
+     "organoide": "o2",
+     "condicao": "veiculo",
+     "valor": 0.798988
+    },
+    {
+     "organoide": "o2",
+     "condicao": "AMPA",
+     "valor": 0.485184
+    },
+    {
+     "organoide": "o2",
+     "condicao": "NMDA",
+     "valor": 0.658171
+    },
+    {
+     "organoide": "o2",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.373431
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem1",
+     "valor": 0.778346
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem2",
+     "valor": 0.699485
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem3",
+     "valor": 0.767615
+    },
+    {
+     "organoide": "o2",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o3",
+     "condicao": "basal",
+     "valor": 0.777147
+    },
+    {
+     "organoide": "o3",
+     "condicao": "veiculo",
+     "valor": 0.757013
+    },
+    {
+     "organoide": "o3",
+     "condicao": "AMPA",
+     "valor": 0.486699
+    },
+    {
+     "organoide": "o3",
+     "condicao": "NMDA",
+     "valor": 0.643218
+    },
+    {
+     "organoide": "o3",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.390508
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem1",
+     "valor": 0.786711
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem2",
+     "valor": 0.790304
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem3",
+     "valor": 0.784762
+    },
+    {
+     "organoide": "o3",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o4",
+     "condicao": "basal",
+     "valor": 0.831505
+    },
+    {
+     "organoide": "o4",
+     "condicao": "veiculo",
+     "valor": 0.891639
+    },
+    {
+     "organoide": "o4",
+     "condicao": "AMPA",
+     "valor": 0.525576
+    },
+    {
+     "organoide": "o4",
+     "condicao": "NMDA",
+     "valor": 0.707141
+    },
+    {
+     "organoide": "o4",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.44101
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem1",
+     "valor": 0.894281
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem2",
+     "valor": 0.832664
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem3",
+     "valor": 0.82483
+    },
+    {
+     "organoide": "o4",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o5",
+     "condicao": "basal",
+     "valor": 0.780805
+    },
+    {
+     "organoide": "o5",
+     "condicao": "veiculo",
+     "valor": 0.74858
+    },
+    {
+     "organoide": "o5",
+     "condicao": "AMPA",
+     "valor": 0.44795
+    },
+    {
+     "organoide": "o5",
+     "condicao": "NMDA",
+     "valor": 0.76669
+    },
+    {
+     "organoide": "o5",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.359516
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem1",
+     "valor": 0.744978
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem2",
+     "valor": 0.773279
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem3",
+     "valor": 0.802986
+    },
+    {
+     "organoide": "o5",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o6",
+     "condicao": "basal",
+     "valor": 0.76736
+    },
+    {
+     "organoide": "o6",
+     "condicao": "veiculo",
+     "valor": 0.745387
+    },
+    {
+     "organoide": "o6",
+     "condicao": "AMPA",
+     "valor": 0.465164
+    },
+    {
+     "organoide": "o6",
+     "condicao": "NMDA",
+     "valor": 0.691961
+    },
+    {
+     "organoide": "o6",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.330126
+    },
+    {
+     "organoide": "o6",
+     "condicao": "lavagem1",
+     "valor": 0.773227
+    },
+    {
+     "organoide": "o6",
+     "condicao": "lavagem2",
+     "valor": 0.821602
+    },
+    {
+     "organoide": "o6",
+     "condicao": "lavagem3",
+     "valor": 0.738325
+    },
+    {
+     "organoide": "o6",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o7",
+     "condicao": "basal",
+     "valor": 0.764614
+    },
+    {
+     "organoide": "o7",
+     "condicao": "veiculo",
+     "valor": 0.774653
+    },
+    {
+     "organoide": "o7",
+     "condicao": "AMPA",
+     "valor": 0.486326
+    },
+    {
+     "organoide": "o7",
+     "condicao": "NMDA",
+     "valor": 0.653307
+    },
+    {
+     "organoide": "o7",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.364661
+    },
+    {
+     "organoide": "o7",
+     "condicao": "lavagem1",
+     "valor": 0.781556
+    },
+    {
+     "organoide": "o7",
+     "condicao": "lavagem2",
+     "valor": 0.788186
+    },
+    {
+     "organoide": "o7",
+     "condicao": "lavagem3",
+     "valor": 0.76619
+    },
+    {
+     "organoide": "o7",
+     "condicao": "TTX",
+     "valor": 0.33
+    }
+   ],
+   "ordem": {
+    "o0": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o3": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o4": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o1": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o5": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o2": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o6": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o7": [
+     "NMDA",
+     "AMPA"
+    ]
+   }
+  },
+  {
+   "id": "sem_efeito_n8",
+   "descricao": "Nenhum bloqueador altera o desempenho; 8 organoides.",
+   "chance": 0.333333,
+   "linhas": [
+    {
+     "organoide": "o0",
+     "condicao": "basal",
+     "valor": 0.782747
+    },
+    {
+     "organoide": "o0",
+     "condicao": "veiculo",
+     "valor": 0.764084
+    },
+    {
+     "organoide": "o0",
+     "condicao": "AMPA",
+     "valor": 0.785154
+    },
+    {
+     "organoide": "o0",
+     "condicao": "NMDA",
+     "valor": 0.820321
+    },
+    {
+     "organoide": "o0",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.77303
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem1",
+     "valor": 0.749697
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem2",
+     "valor": 0.758785
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem3",
+     "valor": 0.83607
+    },
+    {
+     "organoide": "o0",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o1",
+     "condicao": "basal",
+     "valor": 0.789488
+    },
+    {
+     "organoide": "o1",
+     "condicao": "veiculo",
+     "valor": 0.753979
+    },
+    {
+     "organoide": "o1",
+     "condicao": "AMPA",
+     "valor": 0.780419
+    },
+    {
+     "organoide": "o1",
+     "condicao": "NMDA",
+     "valor": 0.798436
+    },
+    {
+     "organoide": "o1",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.798101
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem1",
+     "valor": 0.845379
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem2",
+     "valor": 0.783746
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem3",
+     "valor": 0.743118
+    },
+    {
+     "organoide": "o1",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o2",
+     "condicao": "basal",
+     "valor": 0.845266
+    },
+    {
+     "organoide": "o2",
+     "condicao": "veiculo",
+     "valor": 0.853876
+    },
+    {
+     "organoide": "o2",
+     "condicao": "AMPA",
+     "valor": 0.854266
+    },
+    {
+     "organoide": "o2",
+     "condicao": "NMDA",
+     "valor": 0.824895
+    },
+    {
+     "organoide": "o2",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.814197
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem1",
+     "valor": 0.892689
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem2",
+     "valor": 0.799734
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem3",
+     "valor": 0.826662
+    },
+    {
+     "organoide": "o2",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o3",
+     "condicao": "basal",
+     "valor": 0.765594
+    },
+    {
+     "organoide": "o3",
+     "condicao": "veiculo",
+     "valor": 0.808905
+    },
+    {
+     "organoide": "o3",
+     "condicao": "AMPA",
+     "valor": 0.775262
+    },
+    {
+     "organoide": "o3",
+     "condicao": "NMDA",
+     "valor": 0.744346
+    },
+    {
+     "organoide": "o3",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.78699
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem1",
+     "valor": 0.823929
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem2",
+     "valor": 0.736712
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem3",
+     "valor": 0.738788
+    },
+    {
+     "organoide": "o3",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o4",
+     "condicao": "basal",
+     "valor": 0.811999
+    },
+    {
+     "organoide": "o4",
+     "condicao": "veiculo",
+     "valor": 0.819278
+    },
+    {
+     "organoide": "o4",
+     "condicao": "AMPA",
+     "valor": 0.777922
+    },
+    {
+     "organoide": "o4",
+     "condicao": "NMDA",
+     "valor": 0.792848
+    },
+    {
+     "organoide": "o4",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.811421
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem1",
+     "valor": 0.837922
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem2",
+     "valor": 0.767383
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem3",
+     "valor": 0.832161
+    },
+    {
+     "organoide": "o4",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o5",
+     "condicao": "basal",
+     "valor": 0.815233
+    },
+    {
+     "organoide": "o5",
+     "condicao": "veiculo",
+     "valor": 0.877
+    },
+    {
+     "organoide": "o5",
+     "condicao": "AMPA",
+     "valor": 0.743317
+    },
+    {
+     "organoide": "o5",
+     "condicao": "NMDA",
+     "valor": 0.80499
+    },
+    {
+     "organoide": "o5",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.803402
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem1",
+     "valor": 0.861364
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem2",
+     "valor": 0.779812
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem3",
+     "valor": 0.798624
+    },
+    {
+     "organoide": "o5",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o6",
+     "condicao": "basal",
+     "valor": 0.807953
+    },
+    {
+     "organoide": "o6",
+     "condicao": "veiculo",
+     "valor": 0.826886
+    },
+    {
+     "organoide": "o6",
+     "condicao": "AMPA",
+     "valor": 0.82319
+    },
+    {
+     "organoide": "o6",
+     "condicao": "NMDA",
+     "valor": 0.769008
+    },
+    {
+     "organoide": "o6",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.867813
+    },
+    {
+     "organoide": "o6",
+     "condicao": "lavagem1",
+     "valor": 0.787078
+    },
+    {
+     "organoide": "o6",
+     "condicao": "lavagem2",
+     "valor": 0.821799
+    },
+    {
+     "organoide": "o6",
+     "condicao": "lavagem3",
+     "valor": 0.837769
+    },
+    {
+     "organoide": "o6",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o7",
+     "condicao": "basal",
+     "valor": 0.789333
+    },
+    {
+     "organoide": "o7",
+     "condicao": "veiculo",
+     "valor": 0.806213
+    },
+    {
+     "organoide": "o7",
+     "condicao": "AMPA",
+     "valor": 0.743159
+    },
+    {
+     "organoide": "o7",
+     "condicao": "NMDA",
+     "valor": 0.78568
+    },
+    {
+     "organoide": "o7",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.772925
+    },
+    {
+     "organoide": "o7",
+     "condicao": "lavagem1",
+     "valor": 0.741889
+    },
+    {
+     "organoide": "o7",
+     "condicao": "lavagem2",
+     "valor": 0.768029
+    },
+    {
+     "organoide": "o7",
+     "condicao": "lavagem3",
+     "valor": 0.757283
+    },
+    {
+     "organoide": "o7",
+     "condicao": "TTX",
+     "valor": 0.33
+    }
+   ],
+   "ordem": {
+    "o7": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o2": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o0": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o1": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o5": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o4": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o6": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o3": [
+     "NMDA",
+     "AMPA"
+    ]
+   }
+  },
+  {
+   "id": "n3_descritivo",
+   "descricao": "Apenas 3 organoides: IC não deve ser calculado.",
+   "chance": 0.333333,
+   "linhas": [
+    {
+     "organoide": "o0",
+     "condicao": "basal",
+     "valor": 0.775221
+    },
+    {
+     "organoide": "o0",
+     "condicao": "veiculo",
+     "valor": 0.782497
+    },
+    {
+     "organoide": "o0",
+     "condicao": "AMPA",
+     "valor": 0.473306
+    },
+    {
+     "organoide": "o0",
+     "condicao": "NMDA",
+     "valor": 0.672391
+    },
+    {
+     "organoide": "o0",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.384925
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem1",
+     "valor": 0.7952
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem2",
+     "valor": 0.780906
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem3",
+     "valor": 0.780572
+    },
+    {
+     "organoide": "o0",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o1",
+     "condicao": "basal",
+     "valor": 0.76588
+    },
+    {
+     "organoide": "o1",
+     "condicao": "veiculo",
+     "valor": 0.783222
+    },
+    {
+     "organoide": "o1",
+     "condicao": "AMPA",
+     "valor": 0.456115
+    },
+    {
+     "organoide": "o1",
+     "condicao": "NMDA",
+     "valor": 0.695579
+    },
+    {
+     "organoide": "o1",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.405276
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem1",
+     "valor": 0.716901
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem2",
+     "valor": 0.805774
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem3",
+     "valor": 0.745451
+    },
+    {
+     "organoide": "o1",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o2",
+     "condicao": "basal",
+     "valor": 0.768872
+    },
+    {
+     "organoide": "o2",
+     "condicao": "veiculo",
+     "valor": 0.761901
+    },
+    {
+     "organoide": "o2",
+     "condicao": "AMPA",
+     "valor": 0.477848
+    },
+    {
+     "organoide": "o2",
+     "condicao": "NMDA",
+     "valor": 0.69914
+    },
+    {
+     "organoide": "o2",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.453544
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem1",
+     "valor": 0.72497
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem2",
+     "valor": 0.757878
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem3",
+     "valor": 0.780158
+    },
+    {
+     "organoide": "o2",
+     "condicao": "TTX",
+     "valor": 0.33
+    }
+   ],
+   "ordem": {
+    "o2": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o0": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o1": [
+     "AMPA",
+     "NMDA"
+    ]
+   }
+  },
+  {
+   "id": "n20_permutacao_aproximada",
+   "descricao": "20 organoides (n > 15): teste de permutação por simulação.",
+   "chance": 0.333333,
+   "linhas": [
+    {
+     "organoide": "o0",
+     "condicao": "basal",
+     "valor": 0.80314
+    },
+    {
+     "organoide": "o0",
+     "condicao": "veiculo",
+     "valor": 0.778944
+    },
+    {
+     "organoide": "o0",
+     "condicao": "AMPA",
+     "valor": 0.6299
+    },
+    {
+     "organoide": "o0",
+     "condicao": "NMDA",
+     "valor": 0.725284
+    },
+    {
+     "organoide": "o0",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.51907
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem1",
+     "valor": 0.818544
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem2",
+     "valor": 0.842712
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem3",
+     "valor": 0.841415
+    },
+    {
+     "organoide": "o0",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o1",
+     "condicao": "basal",
+     "valor": 0.840668
+    },
+    {
+     "organoide": "o1",
+     "condicao": "veiculo",
+     "valor": 0.852757
+    },
+    {
+     "organoide": "o1",
+     "condicao": "AMPA",
+     "valor": 0.630199
+    },
+    {
+     "organoide": "o1",
+     "condicao": "NMDA",
+     "valor": 0.808006
+    },
+    {
+     "organoide": "o1",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.608051
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem1",
+     "valor": 0.842651
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem2",
+     "valor": 0.819709
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem3",
+     "valor": 0.835341
+    },
+    {
+     "organoide": "o1",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o2",
+     "condicao": "basal",
+     "valor": 0.807965
+    },
+    {
+     "organoide": "o2",
+     "condicao": "veiculo",
+     "valor": 0.773302
+    },
+    {
+     "organoide": "o2",
+     "condicao": "AMPA",
+     "valor": 0.597053
+    },
+    {
+     "organoide": "o2",
+     "condicao": "NMDA",
+     "valor": 0.721456
+    },
+    {
+     "organoide": "o2",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.611235
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem1",
+     "valor": 0.829287
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem2",
+     "valor": 0.803746
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem3",
+     "valor": 0.836549
+    },
+    {
+     "organoide": "o2",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o3",
+     "condicao": "basal",
+     "valor": 0.805268
+    },
+    {
+     "organoide": "o3",
+     "condicao": "veiculo",
+     "valor": 0.788839
+    },
+    {
+     "organoide": "o3",
+     "condicao": "AMPA",
+     "valor": 0.606131
+    },
+    {
+     "organoide": "o3",
+     "condicao": "NMDA",
+     "valor": 0.751327
+    },
+    {
+     "organoide": "o3",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.664518
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem1",
+     "valor": 0.775693
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem2",
+     "valor": 0.721723
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem3",
+     "valor": 0.828264
+    },
+    {
+     "organoide": "o3",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o4",
+     "condicao": "basal",
+     "valor": 0.760211
+    },
+    {
+     "organoide": "o4",
+     "condicao": "veiculo",
+     "valor": 0.718242
+    },
+    {
+     "organoide": "o4",
+     "condicao": "AMPA",
+     "valor": 0.600905
+    },
+    {
+     "organoide": "o4",
+     "condicao": "NMDA",
+     "valor": 0.683429
+    },
+    {
+     "organoide": "o4",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.470519
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem1",
+     "valor": 0.760761
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem2",
+     "valor": 0.722249
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem3",
+     "valor": 0.782463
+    },
+    {
+     "organoide": "o4",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o5",
+     "condicao": "basal",
+     "valor": 0.776192
+    },
+    {
+     "organoide": "o5",
+     "condicao": "veiculo",
+     "valor": 0.779013
+    },
+    {
+     "organoide": "o5",
+     "condicao": "AMPA",
+     "valor": 0.62138
+    },
+    {
+     "organoide": "o5",
+     "condicao": "NMDA",
+     "valor": 0.786797
+    },
+    {
+     "organoide": "o5",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.458141
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem1",
+     "valor": 0.761174
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem2",
+     "valor": 0.764004
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem3",
+     "valor": 0.80178
+    },
+    {
+     "organoide": "o5",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o6",
+     "condicao": "basal",
+     "valor": 0.786829
+    },
+    {
+     "organoide": "o6",
+     "condicao": "veiculo",
+     "valor": 0.758891
+    },
+    {
+     "organoide": "o6",
+     "condicao": "AMPA",
+     "valor": 0.632223
+    },
+    {
+     "organoide": "o6",
+     "condicao": "NMDA",
+     "valor": 0.777051
+    },
+    {
+     "organoide": "o6",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.540784
+    },
+    {
+     "organoide": "o6",
+     "condicao": "lavagem1",
+     "valor": 0.722734
+    },
+    {
+     "organoide": "o6",
+     "condicao": "lavagem2",
+     "valor": 0.78258
+    },
+    {
+     "organoide": "o6",
+     "condicao": "lavagem3",
+     "valor": 0.744642
+    },
+    {
+     "organoide": "o6",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o7",
+     "condicao": "basal",
+     "valor": 0.862182
+    },
+    {
+     "organoide": "o7",
+     "condicao": "veiculo",
+     "valor": 0.877585
+    },
+    {
+     "organoide": "o7",
+     "condicao": "AMPA",
+     "valor": 0.673492
+    },
+    {
+     "organoide": "o7",
+     "condicao": "NMDA",
+     "valor": 0.839123
+    },
+    {
+     "organoide": "o7",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.634212
+    },
+    {
+     "organoide": "o7",
+     "condicao": "lavagem1",
+     "valor": 0.82516
+    },
+    {
+     "organoide": "o7",
+     "condicao": "lavagem2",
+     "valor": 0.881219
+    },
+    {
+     "organoide": "o7",
+     "condicao": "lavagem3",
+     "valor": 0.872844
+    },
+    {
+     "organoide": "o7",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o8",
+     "condicao": "basal",
+     "valor": 0.721697
+    },
+    {
+     "organoide": "o8",
+     "condicao": "veiculo",
+     "valor": 0.757961
+    },
+    {
+     "organoide": "o8",
+     "condicao": "AMPA",
+     "valor": 0.535111
+    },
+    {
+     "organoide": "o8",
+     "condicao": "NMDA",
+     "valor": 0.668859
+    },
+    {
+     "organoide": "o8",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.488264
+    },
+    {
+     "organoide": "o8",
+     "condicao": "lavagem1",
+     "valor": 0.696485
+    },
+    {
+     "organoide": "o8",
+     "condicao": "lavagem2",
+     "valor": 0.754222
+    },
+    {
+     "organoide": "o8",
+     "condicao": "lavagem3",
+     "valor": 0.710128
+    },
+    {
+     "organoide": "o8",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o9",
+     "condicao": "basal",
+     "valor": 0.761205
+    },
+    {
+     "organoide": "o9",
+     "condicao": "veiculo",
+     "valor": 0.824775
+    },
+    {
+     "organoide": "o9",
+     "condicao": "AMPA",
+     "valor": 0.586869
+    },
+    {
+     "organoide": "o9",
+     "condicao": "NMDA",
+     "valor": 0.71388
+    },
+    {
+     "organoide": "o9",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.520232
+    },
+    {
+     "organoide": "o9",
+     "condicao": "lavagem1",
+     "valor": 0.778085
+    },
+    {
+     "organoide": "o9",
+     "condicao": "lavagem2",
+     "valor": 0.807349
+    },
+    {
+     "organoide": "o9",
+     "condicao": "lavagem3",
+     "valor": 0.784465
+    },
+    {
+     "organoide": "o9",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o10",
+     "condicao": "basal",
+     "valor": 0.84314
+    },
+    {
+     "organoide": "o10",
+     "condicao": "veiculo",
+     "valor": 0.823448
+    },
+    {
+     "organoide": "o10",
+     "condicao": "AMPA",
+     "valor": 0.620807
+    },
+    {
+     "organoide": "o10",
+     "condicao": "NMDA",
+     "valor": 0.800771
+    },
+    {
+     "organoide": "o10",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.607498
+    },
+    {
+     "organoide": "o10",
+     "condicao": "lavagem1",
+     "valor": 0.842275
+    },
+    {
+     "organoide": "o10",
+     "condicao": "lavagem2",
+     "valor": 0.817846
+    },
+    {
+     "organoide": "o10",
+     "condicao": "lavagem3",
+     "valor": 0.834257
+    },
+    {
+     "organoide": "o10",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o11",
+     "condicao": "basal",
+     "valor": 0.827837
+    },
+    {
+     "organoide": "o11",
+     "condicao": "veiculo",
+     "valor": 0.853609
+    },
+    {
+     "organoide": "o11",
+     "condicao": "AMPA",
+     "valor": 0.592509
+    },
+    {
+     "organoide": "o11",
+     "condicao": "NMDA",
+     "valor": 0.803696
+    },
+    {
+     "organoide": "o11",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.592788
+    },
+    {
+     "organoide": "o11",
+     "condicao": "lavagem1",
+     "valor": 0.83985
+    },
+    {
+     "organoide": "o11",
+     "condicao": "lavagem2",
+     "valor": 0.857054
+    },
+    {
+     "organoide": "o11",
+     "condicao": "lavagem3",
+     "valor": 0.837211
+    },
+    {
+     "organoide": "o11",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o12",
+     "condicao": "basal",
+     "valor": 0.854224
+    },
+    {
+     "organoide": "o12",
+     "condicao": "veiculo",
+     "valor": 0.839474
+    },
+    {
+     "organoide": "o12",
+     "condicao": "AMPA",
+     "valor": 0.626081
+    },
+    {
+     "organoide": "o12",
+     "condicao": "NMDA",
+     "valor": 0.81371
+    },
+    {
+     "organoide": "o12",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.619181
+    },
+    {
+     "organoide": "o12",
+     "condicao": "lavagem1",
+     "valor": 0.822335
+    },
+    {
+     "organoide": "o12",
+     "condicao": "lavagem2",
+     "valor": 0.870091
+    },
+    {
+     "organoide": "o12",
+     "condicao": "lavagem3",
+     "valor": 0.863942
+    },
+    {
+     "organoide": "o12",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o13",
+     "condicao": "basal",
+     "valor": 0.76601
+    },
+    {
+     "organoide": "o13",
+     "condicao": "veiculo",
+     "valor": 0.757298
+    },
+    {
+     "organoide": "o13",
+     "condicao": "AMPA",
+     "valor": 0.600101
+    },
+    {
+     "organoide": "o13",
+     "condicao": "NMDA",
+     "valor": 0.746226
+    },
+    {
+     "organoide": "o13",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.483173
+    },
+    {
+     "organoide": "o13",
+     "condicao": "lavagem1",
+     "valor": 0.79031
+    },
+    {
+     "organoide": "o13",
+     "condicao": "lavagem2",
+     "valor": 0.768473
+    },
+    {
+     "organoide": "o13",
+     "condicao": "lavagem3",
+     "valor": 0.831972
+    },
+    {
+     "organoide": "o13",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o14",
+     "condicao": "basal",
+     "valor": 0.794479
+    },
+    {
+     "organoide": "o14",
+     "condicao": "veiculo",
+     "valor": 0.814405
+    },
+    {
+     "organoide": "o14",
+     "condicao": "AMPA",
+     "valor": 0.54705
+    },
+    {
+     "organoide": "o14",
+     "condicao": "NMDA",
+     "valor": 0.779402
+    },
+    {
+     "organoide": "o14",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.544003
+    },
+    {
+     "organoide": "o14",
+     "condicao": "lavagem1",
+     "valor": 0.778027
+    },
+    {
+     "organoide": "o14",
+     "condicao": "lavagem2",
+     "valor": 0.77949
+    },
+    {
+     "organoide": "o14",
+     "condicao": "lavagem3",
+     "valor": 0.790176
+    },
+    {
+     "organoide": "o14",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o15",
+     "condicao": "basal",
+     "valor": 0.782802
+    },
+    {
+     "organoide": "o15",
+     "condicao": "veiculo",
+     "valor": 0.801444
+    },
+    {
+     "organoide": "o15",
+     "condicao": "AMPA",
+     "valor": 0.568289
+    },
+    {
+     "organoide": "o15",
+     "condicao": "NMDA",
+     "valor": 0.72429
+    },
+    {
+     "organoide": "o15",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.623467
+    },
+    {
+     "organoide": "o15",
+     "condicao": "lavagem1",
+     "valor": 0.781448
+    },
+    {
+     "organoide": "o15",
+     "condicao": "lavagem2",
+     "valor": 0.798149
+    },
+    {
+     "organoide": "o15",
+     "condicao": "lavagem3",
+     "valor": 0.792126
+    },
+    {
+     "organoide": "o15",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o16",
+     "condicao": "basal",
+     "valor": 0.798318
+    },
+    {
+     "organoide": "o16",
+     "condicao": "veiculo",
+     "valor": 0.802582
+    },
+    {
+     "organoide": "o16",
+     "condicao": "AMPA",
+     "valor": 0.557885
+    },
+    {
+     "organoide": "o16",
+     "condicao": "NMDA",
+     "valor": 0.770828
+    },
+    {
+     "organoide": "o16",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.555762
+    },
+    {
+     "organoide": "o16",
+     "condicao": "lavagem1",
+     "valor": 0.802911
+    },
+    {
+     "organoide": "o16",
+     "condicao": "lavagem2",
+     "valor": 0.76407
+    },
+    {
+     "organoide": "o16",
+     "condicao": "lavagem3",
+     "valor": 0.827143
+    },
+    {
+     "organoide": "o16",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o17",
+     "condicao": "basal",
+     "valor": 0.757749
+    },
+    {
+     "organoide": "o17",
+     "condicao": "veiculo",
+     "valor": 0.755028
+    },
+    {
+     "organoide": "o17",
+     "condicao": "AMPA",
+     "valor": 0.536728
+    },
+    {
+     "organoide": "o17",
+     "condicao": "NMDA",
+     "valor": 0.664614
+    },
+    {
+     "organoide": "o17",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.554619
+    },
+    {
+     "organoide": "o17",
+     "condicao": "lavagem1",
+     "valor": 0.800764
+    },
+    {
+     "organoide": "o17",
+     "condicao": "lavagem2",
+     "valor": 0.796359
+    },
+    {
+     "organoide": "o17",
+     "condicao": "lavagem3",
+     "valor": 0.757565
+    },
+    {
+     "organoide": "o17",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o18",
+     "condicao": "basal",
+     "valor": 0.773311
+    },
+    {
+     "organoide": "o18",
+     "condicao": "veiculo",
+     "valor": 0.778817
+    },
+    {
+     "organoide": "o18",
+     "condicao": "AMPA",
+     "valor": 0.569069
+    },
+    {
+     "organoide": "o18",
+     "condicao": "NMDA",
+     "valor": 0.668581
+    },
+    {
+     "organoide": "o18",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.559438
+    },
+    {
+     "organoide": "o18",
+     "condicao": "lavagem1",
+     "valor": 0.798412
+    },
+    {
+     "organoide": "o18",
+     "condicao": "lavagem2",
+     "valor": 0.754334
+    },
+    {
+     "organoide": "o18",
+     "condicao": "lavagem3",
+     "valor": 0.742113
+    },
+    {
+     "organoide": "o18",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o19",
+     "condicao": "basal",
+     "valor": 0.797727
+    },
+    {
+     "organoide": "o19",
+     "condicao": "veiculo",
+     "valor": 0.804051
+    },
+    {
+     "organoide": "o19",
+     "condicao": "AMPA",
+     "valor": 0.663618
+    },
+    {
+     "organoide": "o19",
+     "condicao": "NMDA",
+     "valor": 0.760155
+    },
+    {
+     "organoide": "o19",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.516735
+    },
+    {
+     "organoide": "o19",
+     "condicao": "lavagem1",
+     "valor": 0.817545
+    },
+    {
+     "organoide": "o19",
+     "condicao": "lavagem2",
+     "valor": 0.760779
+    },
+    {
+     "organoide": "o19",
+     "condicao": "lavagem3",
+     "valor": 0.766149
+    },
+    {
+     "organoide": "o19",
+     "condicao": "TTX",
+     "valor": 0.33
+    }
+   ],
+   "ordem": {
+    "o4": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o12": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o3": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o18": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o1": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o13": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o10": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o2": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o9": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o0": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o7": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o5": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o8": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o11": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o17": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o15": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o16": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o14": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o6": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o19": [
+     "NMDA",
+     "AMPA"
+    ]
+   }
+  },
+  {
+   "id": "ttx_falha_em_o0",
+   "descricao": "TTX não leva o organoide o0 ao acaso (suspeita de artefato).",
+   "chance": 0.333333,
+   "linhas": [
+    {
+     "organoide": "o0",
+     "condicao": "basal",
+     "valor": 0.770863
+    },
+    {
+     "organoide": "o0",
+     "condicao": "veiculo",
+     "valor": 0.764944
+    },
+    {
+     "organoide": "o0",
+     "condicao": "AMPA",
+     "valor": 0.508213
+    },
+    {
+     "organoide": "o0",
+     "condicao": "NMDA",
+     "valor": 0.723328
+    },
+    {
+     "organoide": "o0",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.355381
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem1",
+     "valor": 0.809719
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem2",
+     "valor": 0.753859
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem3",
+     "valor": 0.77248
+    },
+    {
+     "organoide": "o0",
+     "condicao": "TTX",
+     "valor": 0.8
+    },
+    {
+     "organoide": "o1",
+     "condicao": "basal",
+     "valor": 0.83219
+    },
+    {
+     "organoide": "o1",
+     "condicao": "veiculo",
+     "valor": 0.822335
+    },
+    {
+     "organoide": "o1",
+     "condicao": "AMPA",
+     "valor": 0.603367
+    },
+    {
+     "organoide": "o1",
+     "condicao": "NMDA",
+     "valor": 0.656147
+    },
+    {
+     "organoide": "o1",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.423248
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem1",
+     "valor": 0.807872
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem2",
+     "valor": 0.825163
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem3",
+     "valor": 0.834397
+    },
+    {
+     "organoide": "o1",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o2",
+     "condicao": "basal",
+     "valor": 0.75179
+    },
+    {
+     "organoide": "o2",
+     "condicao": "veiculo",
+     "valor": 0.785746
+    },
+    {
+     "organoide": "o2",
+     "condicao": "AMPA",
+     "valor": 0.414738
+    },
+    {
+     "organoide": "o2",
+     "condicao": "NMDA",
+     "valor": 0.668999
+    },
+    {
+     "organoide": "o2",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.381168
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem1",
+     "valor": 0.717809
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem2",
+     "valor": 0.785558
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem3",
+     "valor": 0.759289
+    },
+    {
+     "organoide": "o2",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o3",
+     "condicao": "basal",
+     "valor": 0.789766
+    },
+    {
+     "organoide": "o3",
+     "condicao": "veiculo",
+     "valor": 0.814318
+    },
+    {
+     "organoide": "o3",
+     "condicao": "AMPA",
+     "valor": 0.537676
+    },
+    {
+     "organoide": "o3",
+     "condicao": "NMDA",
+     "valor": 0.731036
+    },
+    {
+     "organoide": "o3",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.400021
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem1",
+     "valor": 0.779981
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem2",
+     "valor": 0.772461
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem3",
+     "valor": 0.81267
+    },
+    {
+     "organoide": "o3",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o4",
+     "condicao": "basal",
+     "valor": 0.802589
+    },
+    {
+     "organoide": "o4",
+     "condicao": "veiculo",
+     "valor": 0.786128
+    },
+    {
+     "organoide": "o4",
+     "condicao": "AMPA",
+     "valor": 0.481702
+    },
+    {
+     "organoide": "o4",
+     "condicao": "NMDA",
+     "valor": 0.672799
+    },
+    {
+     "organoide": "o4",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.379536
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem1",
+     "valor": 0.814003
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem2",
+     "valor": 0.775221
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem3",
+     "valor": 0.768458
+    },
+    {
+     "organoide": "o4",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o5",
+     "condicao": "basal",
+     "valor": 0.778206
+    },
+    {
+     "organoide": "o5",
+     "condicao": "veiculo",
+     "valor": 0.747464
+    },
+    {
+     "organoide": "o5",
+     "condicao": "AMPA",
+     "valor": 0.447284
+    },
+    {
+     "organoide": "o5",
+     "condicao": "NMDA",
+     "valor": 0.704977
+    },
+    {
+     "organoide": "o5",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.434083
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem1",
+     "valor": 0.778012
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem2",
+     "valor": 0.788792
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem3",
+     "valor": 0.771382
+    },
+    {
+     "organoide": "o5",
+     "condicao": "TTX",
+     "valor": 0.33
+    }
+   ],
+   "ordem": {
+    "o0": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o4": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o5": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o2": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o3": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o1": [
+     "NMDA",
+     "AMPA"
+    ]
+   }
+  },
+  {
+   "id": "lavagem_falha_em_o0",
+   "descricao": "Sem recuperação na lavagem 1 do organoide o0 (deriva ou dano).",
+   "chance": 0.333333,
+   "linhas": [
+    {
+     "organoide": "o0",
+     "condicao": "basal",
+     "valor": 0.825268
+    },
+    {
+     "organoide": "o0",
+     "condicao": "veiculo",
+     "valor": 0.735985
+    },
+    {
+     "organoide": "o0",
+     "condicao": "AMPA",
+     "valor": 0.516117
+    },
+    {
+     "organoide": "o0",
+     "condicao": "NMDA",
+     "valor": 0.768764
+    },
+    {
+     "organoide": "o0",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.387949
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem1",
+     "valor": 0.525268
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem2",
+     "valor": 0.870264
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem3",
+     "valor": 0.790222
+    },
+    {
+     "organoide": "o0",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o1",
+     "condicao": "basal",
+     "valor": 0.824319
+    },
+    {
+     "organoide": "o1",
+     "condicao": "veiculo",
+     "valor": 0.881286
+    },
+    {
+     "organoide": "o1",
+     "condicao": "AMPA",
+     "valor": 0.537728
+    },
+    {
+     "organoide": "o1",
+     "condicao": "NMDA",
+     "valor": 0.773193
+    },
+    {
+     "organoide": "o1",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.420174
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem1",
+     "valor": 0.811691
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem2",
+     "valor": 0.838303
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem3",
+     "valor": 0.781125
+    },
+    {
+     "organoide": "o1",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o2",
+     "condicao": "basal",
+     "valor": 0.833294
+    },
+    {
+     "organoide": "o2",
+     "condicao": "veiculo",
+     "valor": 0.83463
+    },
+    {
+     "organoide": "o2",
+     "condicao": "AMPA",
+     "valor": 0.494499
+    },
+    {
+     "organoide": "o2",
+     "condicao": "NMDA",
+     "valor": 0.767255
+    },
+    {
+     "organoide": "o2",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.453607
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem1",
+     "valor": 0.823477
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem2",
+     "valor": 0.814461
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem3",
+     "valor": 0.84456
+    },
+    {
+     "organoide": "o2",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o3",
+     "condicao": "basal",
+     "valor": 0.752672
+    },
+    {
+     "organoide": "o3",
+     "condicao": "veiculo",
+     "valor": 0.717998
+    },
+    {
+     "organoide": "o3",
+     "condicao": "AMPA",
+     "valor": 0.491366
+    },
+    {
+     "organoide": "o3",
+     "condicao": "NMDA",
+     "valor": 0.663547
+    },
+    {
+     "organoide": "o3",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.390709
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem1",
+     "valor": 0.759979
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem2",
+     "valor": 0.805009
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem3",
+     "valor": 0.722854
+    },
+    {
+     "organoide": "o3",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o4",
+     "condicao": "basal",
+     "valor": 0.838508
+    },
+    {
+     "organoide": "o4",
+     "condicao": "veiculo",
+     "valor": 0.869813
+    },
+    {
+     "organoide": "o4",
+     "condicao": "AMPA",
+     "valor": 0.576634
+    },
+    {
+     "organoide": "o4",
+     "condicao": "NMDA",
+     "valor": 0.790296
+    },
+    {
+     "organoide": "o4",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.431555
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem1",
+     "valor": 0.843522
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem2",
+     "valor": 0.903376
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem3",
+     "valor": 0.88156
+    },
+    {
+     "organoide": "o4",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o5",
+     "condicao": "basal",
+     "valor": 0.834519
+    },
+    {
+     "organoide": "o5",
+     "condicao": "veiculo",
+     "valor": 0.796474
+    },
+    {
+     "organoide": "o5",
+     "condicao": "AMPA",
+     "valor": 0.597107
+    },
+    {
+     "organoide": "o5",
+     "condicao": "NMDA",
+     "valor": 0.754192
+    },
+    {
+     "organoide": "o5",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.466892
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem1",
+     "valor": 0.786811
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem2",
+     "valor": 0.848618
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem3",
+     "valor": 0.768597
+    },
+    {
+     "organoide": "o5",
+     "condicao": "TTX",
+     "valor": 0.33
+    }
+   ],
+   "ordem": {
+    "o5": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o3": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o2": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o4": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o1": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o0": [
+     "NMDA",
+     "AMPA"
+    ]
+   }
+  },
+  {
+   "id": "condicao_ausente",
+   "descricao": "O organoide o1 não tem a condição NMDA.",
+   "chance": 0.333333,
+   "linhas": [
+    {
+     "organoide": "o0",
+     "condicao": "basal",
+     "valor": 0.774502
+    },
+    {
+     "organoide": "o0",
+     "condicao": "veiculo",
+     "valor": 0.78416
+    },
+    {
+     "organoide": "o0",
+     "condicao": "AMPA",
+     "valor": 0.528173
+    },
+    {
+     "organoide": "o0",
+     "condicao": "NMDA",
+     "valor": 0.700882
+    },
+    {
+     "organoide": "o0",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.38565
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem1",
+     "valor": 0.819133
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem2",
+     "valor": 0.796362
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem3",
+     "valor": 0.836939
+    },
+    {
+     "organoide": "o0",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o1",
+     "condicao": "basal",
+     "valor": 0.759882
+    },
+    {
+     "organoide": "o1",
+     "condicao": "veiculo",
+     "valor": 0.763643
+    },
+    {
+     "organoide": "o1",
+     "condicao": "AMPA",
+     "valor": 0.476209
+    },
+    {
+     "organoide": "o1",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.360471
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem1",
+     "valor": 0.728139
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem2",
+     "valor": 0.71944
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem3",
+     "valor": 0.796477
+    },
+    {
+     "organoide": "o1",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o2",
+     "condicao": "basal",
+     "valor": 0.727994
+    },
+    {
+     "organoide": "o2",
+     "condicao": "veiculo",
+     "valor": 0.681297
+    },
+    {
+     "organoide": "o2",
+     "condicao": "AMPA",
+     "valor": 0.41555
+    },
+    {
+     "organoide": "o2",
+     "condicao": "NMDA",
+     "valor": 0.597842
+    },
+    {
+     "organoide": "o2",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.35707
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem1",
+     "valor": 0.747397
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem2",
+     "valor": 0.736012
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem3",
+     "valor": 0.774405
+    },
+    {
+     "organoide": "o2",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o3",
+     "condicao": "basal",
+     "valor": 0.835296
+    },
+    {
+     "organoide": "o3",
+     "condicao": "veiculo",
+     "valor": 0.869795
+    },
+    {
+     "organoide": "o3",
+     "condicao": "AMPA",
+     "valor": 0.546699
+    },
+    {
+     "organoide": "o3",
+     "condicao": "NMDA",
+     "valor": 0.73635
+    },
+    {
+     "organoide": "o3",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.461603
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem1",
+     "valor": 0.864657
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem2",
+     "valor": 0.846335
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem3",
+     "valor": 0.840526
+    },
+    {
+     "organoide": "o3",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o4",
+     "condicao": "basal",
+     "valor": 0.816049
+    },
+    {
+     "organoide": "o4",
+     "condicao": "veiculo",
+     "valor": 0.843261
+    },
+    {
+     "organoide": "o4",
+     "condicao": "AMPA",
+     "valor": 0.545719
+    },
+    {
+     "organoide": "o4",
+     "condicao": "NMDA",
+     "valor": 0.691891
+    },
+    {
+     "organoide": "o4",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.407659
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem1",
+     "valor": 0.838506
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem2",
+     "valor": 0.820018
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem3",
+     "valor": 0.815459
+    },
+    {
+     "organoide": "o4",
+     "condicao": "TTX",
+     "valor": 0.33
+    },
+    {
+     "organoide": "o5",
+     "condicao": "basal",
+     "valor": 0.828706
+    },
+    {
+     "organoide": "o5",
+     "condicao": "veiculo",
+     "valor": 0.82615
+    },
+    {
+     "organoide": "o5",
+     "condicao": "AMPA",
+     "valor": 0.547697
+    },
+    {
+     "organoide": "o5",
+     "condicao": "NMDA",
+     "valor": 0.694123
+    },
+    {
+     "organoide": "o5",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.480528
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem1",
+     "valor": 0.810928
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem2",
+     "valor": 0.818165
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem3",
+     "valor": 0.901712
+    },
+    {
+     "organoide": "o5",
+     "condicao": "TTX",
+     "valor": 0.33
+    }
+   ],
+   "ordem": {
+    "o5": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o1": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o2": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o3": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o0": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o4": [
+     "NMDA",
+     "AMPA"
+    ]
+   }
+  },
+  {
+   "id": "controles_efeito_real_n6",
+   "descricao": "6 tratados (AMPA -0,30; NMDA -0,10) e 6 controles só com veículo, sem deriva: o efeito líquido recupera o efeito do fármaco.",
+   "chance": 0.333333,
+   "linhas": [
+    {
+     "organoide": "o0",
+     "condicao": "basal",
+     "valor": 0.809949,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "veiculo",
+     "valor": 0.823765,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "AMPA",
+     "valor": 0.556686,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "NMDA",
+     "valor": 0.749966,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.414695,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem1",
+     "valor": 0.820926,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem2",
+     "valor": 0.774391,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem3",
+     "valor": 0.798094,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "TTX",
+     "valor": 0.33,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "basal",
+     "valor": 0.809601,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "veiculo",
+     "valor": 0.833125,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "AMPA",
+     "valor": 0.485312,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "NMDA",
+     "valor": 0.684774,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.425053,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem1",
+     "valor": 0.831652,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem2",
+     "valor": 0.776842,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem3",
+     "valor": 0.81948,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "TTX",
+     "valor": 0.33,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "basal",
+     "valor": 0.84034,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "veiculo",
+     "valor": 0.840842,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "AMPA",
+     "valor": 0.56738,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "NMDA",
+     "valor": 0.771406,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.417867,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem1",
+     "valor": 0.827193,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem2",
+     "valor": 0.800038,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem3",
+     "valor": 0.80596,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "TTX",
+     "valor": 0.33,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "basal",
+     "valor": 0.794056,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "veiculo",
+     "valor": 0.814004,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "AMPA",
+     "valor": 0.509746,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "NMDA",
+     "valor": 0.679692,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.341655,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem1",
+     "valor": 0.793469,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem2",
+     "valor": 0.821389,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem3",
+     "valor": 0.804862,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "TTX",
+     "valor": 0.33,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "basal",
+     "valor": 0.816175,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "veiculo",
+     "valor": 0.875859,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "AMPA",
+     "valor": 0.560986,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "NMDA",
+     "valor": 0.710934,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.350049,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem1",
+     "valor": 0.853653,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem2",
+     "valor": 0.802169,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem3",
+     "valor": 0.832181,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "TTX",
+     "valor": 0.33,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "basal",
+     "valor": 0.77263,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "veiculo",
+     "valor": 0.783274,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "AMPA",
+     "valor": 0.446909,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "NMDA",
+     "valor": 0.685657,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.350658,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem1",
+     "valor": 0.760321,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem2",
+     "valor": 0.74872,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem3",
+     "valor": 0.784789,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "TTX",
+     "valor": 0.33,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "basal",
+     "valor": 0.807324,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "veiculo",
+     "valor": 0.814911,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "AMPA",
+     "valor": 0.779836,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "NMDA",
+     "valor": 0.802726,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.774469,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "lavagem1",
+     "valor": 0.795349,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "lavagem2",
+     "valor": 0.812965,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "lavagem3",
+     "valor": 0.810604,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "basal",
+     "valor": 0.844838,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "veiculo",
+     "valor": 0.849583,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "AMPA",
+     "valor": 0.836858,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "NMDA",
+     "valor": 0.821111,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.859567,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "lavagem1",
+     "valor": 0.830049,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "lavagem2",
+     "valor": 0.883046,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "lavagem3",
+     "valor": 0.779314,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "basal",
+     "valor": 0.778281,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "veiculo",
+     "valor": 0.739172,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "AMPA",
+     "valor": 0.73887,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "NMDA",
+     "valor": 0.774572,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.761175,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "lavagem1",
+     "valor": 0.767341,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "lavagem2",
+     "valor": 0.797493,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "lavagem3",
+     "valor": 0.818085,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c3",
+     "condicao": "basal",
+     "valor": 0.755965,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c3",
+     "condicao": "veiculo",
+     "valor": 0.755366,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c3",
+     "condicao": "AMPA",
+     "valor": 0.743356,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c3",
+     "condicao": "NMDA",
+     "valor": 0.734013,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c3",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.76858,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c3",
+     "condicao": "lavagem1",
+     "valor": 0.723062,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c3",
+     "condicao": "lavagem2",
+     "valor": 0.7302,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c3",
+     "condicao": "lavagem3",
+     "valor": 0.725704,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c4",
+     "condicao": "basal",
+     "valor": 0.817914,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c4",
+     "condicao": "veiculo",
+     "valor": 0.82534,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c4",
+     "condicao": "AMPA",
+     "valor": 0.80159,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c4",
+     "condicao": "NMDA",
+     "valor": 0.834878,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c4",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.795356,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c4",
+     "condicao": "lavagem1",
+     "valor": 0.791496,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c4",
+     "condicao": "lavagem2",
+     "valor": 0.858539,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c4",
+     "condicao": "lavagem3",
+     "valor": 0.83504,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c5",
+     "condicao": "basal",
+     "valor": 0.805671,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c5",
+     "condicao": "veiculo",
+     "valor": 0.85666,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c5",
+     "condicao": "AMPA",
+     "valor": 0.814397,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c5",
+     "condicao": "NMDA",
+     "valor": 0.797384,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c5",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.760514,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c5",
+     "condicao": "lavagem1",
+     "valor": 0.762225,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c5",
+     "condicao": "lavagem2",
+     "valor": 0.7998,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c5",
+     "condicao": "lavagem3",
+     "valor": 0.82414,
+     "grupo": "controle"
+    }
+   ],
+   "ordem": {
+    "o4": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o1": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o3": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o5": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o2": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o0": [
+     "NMDA",
+     "AMPA"
+    ],
+    "c3": [
+     "AMPA",
+     "NMDA"
+    ],
+    "c0": [
+     "NMDA",
+     "AMPA"
+    ],
+    "c2": [
+     "AMPA",
+     "NMDA"
+    ],
+    "c5": [
+     "NMDA",
+     "AMPA"
+    ],
+    "c1": [
+     "AMPA",
+     "NMDA"
+    ],
+    "c4": [
+     "NMDA",
+     "AMPA"
+    ]
+   }
+  },
+  {
+   "id": "controles_so_deriva_n6",
+   "descricao": "6 tratados SEM efeito do fármaco e 6 controles, com deriva de -0,03 por janela: sozinhos, os tratados parecem ter efeito; o efeito líquido é ~0.",
+   "chance": 0.333333,
+   "linhas": [
+    {
+     "organoide": "o0",
+     "condicao": "basal",
+     "valor": 0.782748,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "veiculo",
+     "valor": 0.78551,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "AMPA",
+     "valor": 0.629395,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "NMDA",
+     "valor": 0.710837,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.610052,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem1",
+     "valor": 0.71608,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem2",
+     "valor": 0.684883,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem3",
+     "valor": 0.606122,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "TTX",
+     "valor": 0.33,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "basal",
+     "valor": 0.787199,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "veiculo",
+     "valor": 0.777676,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "AMPA",
+     "valor": 0.750669,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "NMDA",
+     "valor": 0.68784,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.613377,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem1",
+     "valor": 0.705284,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem2",
+     "valor": 0.665275,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem3",
+     "valor": 0.598791,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "TTX",
+     "valor": 0.33,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "basal",
+     "valor": 0.770508,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "veiculo",
+     "valor": 0.775465,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "AMPA",
+     "valor": 0.748862,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "NMDA",
+     "valor": 0.661844,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.60864,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem1",
+     "valor": 0.712451,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem2",
+     "valor": 0.685454,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem3",
+     "valor": 0.547473,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "TTX",
+     "valor": 0.33,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "basal",
+     "valor": 0.789728,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "veiculo",
+     "valor": 0.855472,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "AMPA",
+     "valor": 0.74294,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "NMDA",
+     "valor": 0.658588,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.651675,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem1",
+     "valor": 0.727495,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem2",
+     "valor": 0.692713,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem3",
+     "valor": 0.613304,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "TTX",
+     "valor": 0.33,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "basal",
+     "valor": 0.791078,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "veiculo",
+     "valor": 0.81278,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "AMPA",
+     "valor": 0.68298,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "NMDA",
+     "valor": 0.736722,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.592044,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem1",
+     "valor": 0.757653,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem2",
+     "valor": 0.622861,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem3",
+     "valor": 0.606936,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "TTX",
+     "valor": 0.33,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "basal",
+     "valor": 0.843809,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "veiculo",
+     "valor": 0.848908,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "AMPA",
+     "valor": 0.733461,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "NMDA",
+     "valor": 0.858909,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.749432,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem1",
+     "valor": 0.74889,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem2",
+     "valor": 0.690082,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem3",
+     "valor": 0.585149,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "TTX",
+     "valor": 0.33,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "basal",
+     "valor": 0.794883,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "veiculo",
+     "valor": 0.762945,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "AMPA",
+     "valor": 0.795587,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "NMDA",
+     "valor": 0.68155,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.668145,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "lavagem1",
+     "valor": 0.778133,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "lavagem2",
+     "valor": 0.669786,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "lavagem3",
+     "valor": 0.684914,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "basal",
+     "valor": 0.75834,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "veiculo",
+     "valor": 0.780512,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "AMPA",
+     "valor": 0.630643,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "NMDA",
+     "valor": 0.755096,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.662383,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "lavagem1",
+     "valor": 0.689398,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "lavagem2",
+     "valor": 0.663641,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "lavagem3",
+     "valor": 0.611374,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "basal",
+     "valor": 0.782623,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "veiculo",
+     "valor": 0.800178,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "AMPA",
+     "valor": 0.695614,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "NMDA",
+     "valor": 0.756948,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.651806,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "lavagem1",
+     "valor": 0.691617,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "lavagem2",
+     "valor": 0.665283,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "lavagem3",
+     "valor": 0.584147,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c3",
+     "condicao": "basal",
+     "valor": 0.78253,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c3",
+     "condicao": "veiculo",
+     "valor": 0.776621,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c3",
+     "condicao": "AMPA",
+     "valor": 0.720676,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c3",
+     "condicao": "NMDA",
+     "valor": 0.75921,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c3",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.665122,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c3",
+     "condicao": "lavagem1",
+     "valor": 0.701609,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c3",
+     "condicao": "lavagem2",
+     "valor": 0.700369,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c3",
+     "condicao": "lavagem3",
+     "valor": 0.592517,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c4",
+     "condicao": "basal",
+     "valor": 0.764541,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c4",
+     "condicao": "veiculo",
+     "valor": 0.747023,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c4",
+     "condicao": "AMPA",
+     "valor": 0.750402,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c4",
+     "condicao": "NMDA",
+     "valor": 0.646646,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c4",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.63313,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c4",
+     "condicao": "lavagem1",
+     "valor": 0.665648,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c4",
+     "condicao": "lavagem2",
+     "valor": 0.599516,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c4",
+     "condicao": "lavagem3",
+     "valor": 0.590827,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c5",
+     "condicao": "basal",
+     "valor": 0.806644,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c5",
+     "condicao": "veiculo",
+     "valor": 0.839315,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c5",
+     "condicao": "AMPA",
+     "valor": 0.759683,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c5",
+     "condicao": "NMDA",
+     "valor": 0.737099,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c5",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.619813,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c5",
+     "condicao": "lavagem1",
+     "valor": 0.790439,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c5",
+     "condicao": "lavagem2",
+     "valor": 0.694941,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c5",
+     "condicao": "lavagem3",
+     "valor": 0.638056,
+     "grupo": "controle"
+    }
+   ],
+   "ordem": {
+    "o3": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o0": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o2": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o5": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o1": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o4": [
+     "NMDA",
+     "AMPA"
+    ],
+    "c5": [
+     "AMPA",
+     "NMDA"
+    ],
+    "c2": [
+     "NMDA",
+     "AMPA"
+    ],
+    "c4": [
+     "AMPA",
+     "NMDA"
+    ],
+    "c3": [
+     "NMDA",
+     "AMPA"
+    ],
+    "c0": [
+     "AMPA",
+     "NMDA"
+    ],
+    "c1": [
+     "NMDA",
+     "AMPA"
+    ]
+   }
+  },
+  {
+   "id": "controles_n3_descritivo",
+   "descricao": "6 tratados e só 3 controles: o IC do efeito líquido não deve ser calculado.",
+   "chance": 0.333333,
+   "linhas": [
+    {
+     "organoide": "o0",
+     "condicao": "basal",
+     "valor": 0.76979,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "veiculo",
+     "valor": 0.81786,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "AMPA",
+     "valor": 0.527442,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "NMDA",
+     "valor": 0.669303,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.34169,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem1",
+     "valor": 0.752064,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem2",
+     "valor": 0.766948,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "lavagem3",
+     "valor": 0.737111,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o0",
+     "condicao": "TTX",
+     "valor": 0.33,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "basal",
+     "valor": 0.864958,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "veiculo",
+     "valor": 0.872527,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "AMPA",
+     "valor": 0.595433,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "NMDA",
+     "valor": 0.781458,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.498024,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem1",
+     "valor": 0.866196,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem2",
+     "valor": 0.844319,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "lavagem3",
+     "valor": 0.90449,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o1",
+     "condicao": "TTX",
+     "valor": 0.33,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "basal",
+     "valor": 0.784431,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "veiculo",
+     "valor": 0.758419,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "AMPA",
+     "valor": 0.51655,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "NMDA",
+     "valor": 0.655664,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.351699,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem1",
+     "valor": 0.831409,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem2",
+     "valor": 0.800879,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "lavagem3",
+     "valor": 0.771373,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o2",
+     "condicao": "TTX",
+     "valor": 0.33,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "basal",
+     "valor": 0.783835,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "veiculo",
+     "valor": 0.742299,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "AMPA",
+     "valor": 0.517973,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "NMDA",
+     "valor": 0.692327,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.412816,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem1",
+     "valor": 0.821533,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem2",
+     "valor": 0.768272,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "lavagem3",
+     "valor": 0.822253,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o3",
+     "condicao": "TTX",
+     "valor": 0.33,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "basal",
+     "valor": 0.812629,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "veiculo",
+     "valor": 0.829356,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "AMPA",
+     "valor": 0.465826,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "NMDA",
+     "valor": 0.733156,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.403884,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem1",
+     "valor": 0.795944,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem2",
+     "valor": 0.814042,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "lavagem3",
+     "valor": 0.7982,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o4",
+     "condicao": "TTX",
+     "valor": 0.33,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "basal",
+     "valor": 0.790583,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "veiculo",
+     "valor": 0.767411,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "AMPA",
+     "valor": 0.471041,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "NMDA",
+     "valor": 0.69126,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.444004,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem1",
+     "valor": 0.744222,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem2",
+     "valor": 0.717436,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "lavagem3",
+     "valor": 0.78583,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "o5",
+     "condicao": "TTX",
+     "valor": 0.33,
+     "grupo": "tratado"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "basal",
+     "valor": 0.825821,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "veiculo",
+     "valor": 0.813534,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "AMPA",
+     "valor": 0.75326,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "NMDA",
+     "valor": 0.798775,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.798789,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "lavagem1",
+     "valor": 0.768887,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "lavagem2",
+     "valor": 0.845572,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c0",
+     "condicao": "lavagem3",
+     "valor": 0.834419,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "basal",
+     "valor": 0.761543,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "veiculo",
+     "valor": 0.781629,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "AMPA",
+     "valor": 0.744189,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "NMDA",
+     "valor": 0.804064,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.781222,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "lavagem1",
+     "valor": 0.816405,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "lavagem2",
+     "valor": 0.759524,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c1",
+     "condicao": "lavagem3",
+     "valor": 0.787795,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "basal",
+     "valor": 0.778518,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "veiculo",
+     "valor": 0.77815,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "AMPA",
+     "valor": 0.796753,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "NMDA",
+     "valor": 0.784166,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "AMPA+NMDA",
+     "valor": 0.778437,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "lavagem1",
+     "valor": 0.788311,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "lavagem2",
+     "valor": 0.775302,
+     "grupo": "controle"
+    },
+    {
+     "organoide": "c2",
+     "condicao": "lavagem3",
+     "valor": 0.754343,
+     "grupo": "controle"
+    }
+   ],
+   "ordem": {
+    "o5": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o2": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o4": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o3": [
+     "NMDA",
+     "AMPA"
+    ],
+    "o0": [
+     "AMPA",
+     "NMDA"
+    ],
+    "o1": [
+     "NMDA",
+     "AMPA"
+    ],
+    "c0": [
+     "AMPA",
+     "NMDA"
+    ],
+    "c2": [
+     "NMDA",
+     "AMPA"
+    ],
+    "c1": [
+     "AMPA",
+     "NMDA"
+    ]
+   }
+  }
+ ]
+}

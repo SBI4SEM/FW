@@ -1,0 +1,112 @@
+{
+ "meta": {
+  "sintetico": true,
+  "aviso": "DADOS SINTÉTICOS gerados por simulação para testar software. Não são dados de estudantes nem de organoides e não constituem evidência sobre nenhum dos dois.",
+  "descricao": "Casos para os critérios de qualificação de organoides (atividade, veículo, lavagem, TTX).",
+  "versao_bateria": "4",
+  "versao_pacote": "0.1.0"
+ },
+ "dados": [
+  {
+   "id": "qualificado",
+   "entradas": {
+    "cruzamentos_limiar": 40,
+    "variacao_veiculo": 0.05,
+    "recuperou_lavagem": true,
+    "reducao_ttx": 0.97
+   },
+   "qualificado_esperado": true
+  },
+  {
+   "id": "pouca_atividade",
+   "entradas": {
+    "cruzamentos_limiar": 6,
+    "variacao_veiculo": 0.05,
+    "recuperou_lavagem": true,
+    "reducao_ttx": 0.97
+   },
+   "qualificado_esperado": false
+  },
+  {
+   "id": "veiculo_alterou",
+   "entradas": {
+    "cruzamentos_limiar": 40,
+    "variacao_veiculo": -0.35,
+    "recuperou_lavagem": true,
+    "reducao_ttx": 0.97
+   },
+   "qualificado_esperado": false
+  },
+  {
+   "id": "sem_lavagem",
+   "entradas": {
+    "cruzamentos_limiar": 40,
+    "variacao_veiculo": 0.05,
+    "recuperou_lavagem": false,
+    "reducao_ttx": 0.97
+   },
+   "qualificado_esperado": false
+  },
+  {
+   "id": "ttx_fraco",
+   "entradas": {
+    "cruzamentos_limiar": 40,
+    "variacao_veiculo": 0.05,
+    "recuperou_lavagem": true,
+    "reducao_ttx": 0.6
+   },
+   "qualificado_esperado": false
+  },
+  {
+   "id": "sem_ttx_aplicado",
+   "entradas": {
+    "cruzamentos_limiar": 40,
+    "variacao_veiculo": 0.05,
+    "recuperou_lavagem": true,
+    "reducao_ttx": null
+   },
+   "qualificado_esperado": true
+  },
+  {
+   "id": "ttx_ausente_obrigatorio",
+   "entradas": {
+    "cruzamentos_limiar": 40,
+    "variacao_veiculo": 0.05,
+    "recuperou_lavagem": true,
+    "reducao_ttx": null,
+    "ttx_obrigatorio": true
+   },
+   "qualificado_esperado": false
+  },
+  {
+   "id": "lavagem_nao_avaliada",
+   "entradas": {
+    "cruzamentos_limiar": 40,
+    "variacao_veiculo": 0.05,
+    "recuperou_lavagem": null,
+    "reducao_ttx": 0.97
+   },
+   "qualificado_esperado": false
+  },
+  {
+   "id": "veiculo_nao_medido",
+   "entradas": {
+    "cruzamentos_limiar": 40,
+    "variacao_veiculo": null,
+    "recuperou_lavagem": true,
+    "reducao_ttx": 0.97
+   },
+   "qualificado_esperado": false
+  },
+  {
+   "id": "limiares_exatos",
+   "entradas": {
+    "cruzamentos_limiar": 10,
+    "variacao_veiculo": 0.2,
+    "recuperou_lavagem": true,
+    "reducao_ttx": 0.9
+   },
+   "qualificado_esperado": true
+  }
+ ]
+}

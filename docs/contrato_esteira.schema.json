@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Contrato da esteira de decisão (SBI4SEM/FW)",
+  "description": "Entrada e saída de cada camada da esteira (Teste 3). Agnóstico à ferramenta: regra fixa, camada tipada (por exemplo, Jev), organoide ou rede simulada. Nenhum campo pode conter dado de estudante.",
+  "$defs": {
+    "entrada": {
+      "type": "object",
+      "required": ["item_id", "esquema", "entrada"],
+      "properties": {
+        "item_id": {"type": ["string", "integer"]},
+        "esquema": {"type": "array", "minItems": 2, "description": "Rótulos permitidos, na ordem usada pelas probabilidades"},
+        "entrada": {"type": "object", "description": "Vetor de escores ou padrão de estimulação (sintético ou de laboratório)"},
+        "origem": {"type": "string", "enum": ["sintetico", "laboratorio"]}
+      },
+      "additionalProperties": false
+    },
+    "saida": {
+      "type": "object",
+      "required": ["item_id", "camada", "versao", "valida", "rotulo", "probabilidades", "latencia_ms"],
+      "properties": {
+        "item_id": {"type": ["string", "integer"]},
+        "camada": {"type": "string"},
+        "versao": {"type": "string", "description": "Versão do modelo ou da regra; obrigatória para camadas probabilísticas"},
+        "valida": {"type": "boolean", "description": "Falso se a saída violou o esquema; conta como erro"},
+        "rotulo": {"description": "Rótulo escolhido, ou null se inválida"},
+        "probabilidades": {"type": ["object", "null"], "additionalProperties": {"type": "number", "minimum": 0, "maximum": 1}},
+        "latencia_ms": {"type": "number", "minimum": 0}
+      },
+      "additionalProperties": false
+    }
+  }
+}
