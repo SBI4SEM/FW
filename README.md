@@ -250,6 +250,7 @@ cd code
 pip install -r requirements.txt
 python -m pytest                          # 95 testes
 python exemplos/demo_completo.py          # fluxo completo, com dados sintéticos
+python exemplos/benchmark_carga.py --saida resultado.json   # tempos de execução (seção 4.4 do artigo)
 python -m sbi4sem.amostra                 # reproduz a Tabela 4 do artigo
 ```
 

@@ -42,6 +42,8 @@ camada = esteira.CamadaTipada("jev", minha_funcao, esquema=["a", "b", "c"])   # 
 
 `python exemplos/demo_completo.py` executa o fluxo inteiro. Em `CamadaTipada`, mapas rótulo→probabilidade com **chaves do mesmo tipo do esquema** (um JSON converte chaves inteiras em texto: converta de volta ou passe uma lista).
 
+`python exemplos/benchmark_carga.py --saida resultado.json` mede o tempo de execução das rotinas, da suíte de testes e da demonstração (estudo observacional da seção 4.4 do artigo). Os tempos dependem do equipamento; o JSON registra o ambiente.
+
 ## Testes (95)
 
 | Arquivo | O que cobre |
